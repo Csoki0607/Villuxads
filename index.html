@@ -38,14 +38,21 @@
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f6ba13'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
 
-  <!-- Preload Critical LCP Hero Image for Instant Mobile Rendering -->
-  <link rel="preload" as="image" href="images/hero-img-1.png" type="image/png" fetchpriority="high">
+  <!-- Preload Critical LCP Mobile Hero Image (33KB AVIF) -->
+  <link rel="preload" as="image" href="images/hero-mobile.avif" type="image/avif" fetchpriority="high">
 
-  <!-- Optimized Google Fonts (Non-blocking with display:swap) -->
+  <!-- Optimized Non-Blocking Google Fonts Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap">
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap">
+  </noscript>
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -252,8 +259,12 @@
       <!-- Right Column: Transparent Cutout Electrician (hero-img-1.png) + Yellow Trust Card -->
       <div class="hero-electrician-col">
         <div class="hero-electrician-glow"></div>
-        <img src="images/hero-img-1.png" alt="Villux profi villanyszerelő szakember sisakban és szervizfelszerelésben"
-          class="hero-cutout-img" width="645" height="777" loading="eager" fetchpriority="high" decoding="async">
+        <picture>
+          <source srcset="images/hero-img-1.avif" type="image/avif">
+          <source srcset="images/hero-img-1.webp" type="image/webp">
+          <img src="images/hero-img-1.png" alt="Villux profi villanyszerelő szakember sisakban és szervizfelszerelésben"
+            class="hero-cutout-img" width="645" height="777" loading="eager" fetchpriority="high" decoding="async">
+        </picture>
 
         <!-- Yellow Emergency Guarantee Floating Card (Matches Concept 1 Design) -->
         <div class="hero-yellow-trust-badge">
@@ -275,8 +286,12 @@
       <!-- 1. Transparent Electrician Centered (Standing freely) -->
       <div class="mobile-electrician-wrap">
         <div class="hero-electrician-glow"></div>
-        <img src="images/hero-img-1.png" alt="Villux villanyszerelő szakember" class="mobile-cutout-img" width="645"
-          height="777" loading="eager" fetchpriority="high" decoding="async">
+        <picture>
+          <source srcset="images/hero-mobile.avif" type="image/avif">
+          <source srcset="images/hero-mobile.webp" type="image/webp">
+          <img src="images/hero-mobile.webp" alt="Villux villanyszerelő szakember" class="mobile-cutout-img" width="380"
+            height="458" loading="eager" fetchpriority="high" decoding="async">
+        </picture>
       </div>
 
       <!-- 2. Yellow Emergency Card -->
@@ -572,7 +587,8 @@
         <!-- Service 3: Elosztótábla & FI-relé -->
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/eloszto.jpg" alt="Elosztótábla csere és FI-relé életvédelem" loading="lazy">
+            <img src="images/eloszto.avif" alt="Elosztótábla csere és FI-relé életvédelem" loading="lazy"
+              decoding="async" width="600" height="400">
             <div class="service-icon-floating">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 style="width:24px;height:24px;">
@@ -616,7 +632,8 @@
         <!-- Service 4: Készülékbekötés garanciával -->
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/fozolap.webp" alt="Villanytűzhely és indukciós főzőlap szakszerű bekötése" loading="lazy">
+            <img src="images/fozolap.avif" alt="Villanytűzhely és indukciós főzőlap szakszerű bekötése" loading="lazy"
+              decoding="async" width="600" height="400">
             <div class="service-icon-floating">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 style="width:24px;height:24px;">
