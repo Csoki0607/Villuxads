@@ -3626,11 +3626,9 @@ footer {
     line-height: 1.2;
   }
 
-  /* Fix service card images on mobile */
-  .service-card-thumb,
-  .service-card-thumb img {
-    aspect-ratio: 16 / 9;
-    height: auto;
+  /* Fix service card images on mobile - height auto prevents overflow */
+  .service-thumb {
+    height: 180px;
   }
 }
 
