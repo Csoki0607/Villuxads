@@ -3497,20 +3497,20 @@ textarea.form-control {
   right: 10px;
   max-width: 440px;
   margin: 0 auto;
-  background: rgba(4, 23, 17, 0.96);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(246, 186, 19, 0.35);
-  border-radius: 10px;
-  padding: 8px 12px;
-  z-index: 9990;
+  background: rgba(4, 23, 17, 0.98);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(246, 186, 19, 0.45);
+  border-radius: 12px;
+  padding: 10px 14px;
+  z-index: 999999;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
-  transform: translateY(0);
+  gap: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.75);
   opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 

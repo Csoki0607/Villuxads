@@ -11,7 +11,7 @@
   <link rel="preload" as="image" href="images/hero-img-1.avif" type="image/avif" media="(min-width: 993px)" fetchpriority="high">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=2.2">
 
   <!-- Optimized Non-Blocking Google Fonts Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2052,7 +2052,7 @@
   </div>
 
   <!-- Minimal Non-Intrusive Cookie Consent Banner -->
-  <div class="cookie-banner hidden" id="cookieBanner" role="dialog" aria-label="Süti tájékoztató">
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Süti tájékoztató">
     <div class="cookie-text">
       <span>🍪 Sütiket használunk a működéshez és a hívások méréséhez.</span>
     </div>
@@ -2060,12 +2060,22 @@
       <button type="button" class="btn-cookie-accept" id="cookieAcceptBtn">Rendben</button>
     </div>
   </div>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('villux_cookie_consent') === 'accepted') {
+          var b = document.getElementById('cookieBanner');
+          if (b) b.style.display = 'none';
+        }
+      } catch (e) { }
+    })();
+  </script>
 
   <!-- Toast Notification Container -->
   <div id="toastMsg" class="toast-msg"></div>
 
   <!-- Main JavaScript File -->
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js?v=2.2" defer></script>
 </body>
 
 </html>

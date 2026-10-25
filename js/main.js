@@ -577,27 +577,32 @@ function initCookieConsent() {
   const acceptBtn = document.getElementById('cookieAcceptBtn');
   if (!banner || !acceptBtn) return;
 
-  // Ha korábban már elfogadta, azonnal elrejtjük és beállítjuk a Google consent-et
-  const consent = localStorage.getItem('villux_cookie_consent');
-  if (consent === 'accepted') {
-    banner.style.display = 'none';
-    if (typeof window.gtag === 'function') {
-      window.gtag('consent', 'update', {
-        'ad_storage': 'granted',
-        'ad_user_data': 'granted',
-        'ad_personalization': 'granted',
-        'analytics_storage': 'granted'
-      });
+  try {
+    const consent = localStorage.getItem('villux_cookie_consent');
+    if (consent === 'accepted') {
+      banner.style.display = 'none';
+      if (typeof window.gtag === 'function') {
+        window.gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted'
+        });
+      }
+      return;
     }
-    return;
-  }
+  } catch (e) { }
 
-  // Ha még nem fogadta el, finoman megjelenítjük
+  banner.style.display = 'flex';
   banner.classList.remove('hidden');
 
   acceptBtn.addEventListener('click', () => {
-    localStorage.setItem('villux_cookie_consent', 'accepted');
-    banner.classList.add('hidden');
+    try {
+      localStorage.setItem('villux_cookie_consent', 'accepted');
+    } catch (e) { }
+
+    banner.style.opacity = '0';
+    banner.style.transform = 'translateY(12px)';
     setTimeout(() => {
       banner.style.display = 'none';
     }, 280);
@@ -613,5 +618,6 @@ function initCookieConsent() {
     }
   });
 }
+
 
 
