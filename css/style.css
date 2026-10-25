@@ -1883,6 +1883,12 @@ button {
   overflow: hidden;
 }
 
+.project-thumb picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .project-thumb img {
   width: 100%;
   height: 100%;
@@ -3557,5 +3563,98 @@ textarea.form-control {
     margin: 0;
     padding: 10px 14px;
     border-radius: 12px;
+  }
+}
+
+/* ==========================================================================
+   PAGE SPEED: CONTENT-VISIBILITY AUTO (Below-the-fold rendering optimization)
+   ========================================================================== */
+
+/* Defer rendering of off-screen sections */
+.why-section,
+.services-section,
+.calc-section,
+.process-section,
+.referenciak-section,
+.guarantee-section,
+.coverage-section,
+.faq-section,
+.contact-section,
+footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 600px;
+}
+
+/* ==========================================================================
+   MOBILE LAYOUT CRITICAL FIXES
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* Fix potential horizontal overflow */
+  .hero-section,
+  .trust-strip,
+  .why-section,
+  .services-section,
+  .calc-section,
+  .pricing-section,
+  .process-section,
+  .referenciak-section,
+  .guarantee-section,
+  .coverage-section,
+  .faq-section,
+  .contact-section,
+  footer {
+    overflow-x: hidden;
+  }
+
+  /* Improve touch targets */
+  .nav-link,
+  .accordion-header {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Fix section padding on mobile */
+  .pricing-section {
+    padding: 50px 0 60px;
+  }
+
+  /* Better readable section titles on mobile */
+  .section-title {
+    font-size: clamp(1.5rem, 5.8vw, 2.2rem);
+    line-height: 1.2;
+  }
+
+  /* Fix service card images on mobile */
+  .service-card-thumb,
+  .service-card-thumb img {
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Prevent text overflow in small cards */
+  .pricing-card,
+  .service-card,
+  .project-card,
+  .process-step {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Better CTA button on very small screens */
+  .hero-cta-call {
+    font-size: 0.9rem;
+  }
+
+  .cta-call-num {
+    font-size: 1.1rem;
+  }
+
+  /* Improve section spacing */
+  .section-title {
+    font-size: clamp(1.4rem, 5.5vw, 1.85rem);
   }
 }

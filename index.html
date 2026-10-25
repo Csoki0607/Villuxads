@@ -11,7 +11,7 @@
   <link rel="preload" as="image" href="images/hero-img-1.avif" type="image/avif" media="(min-width: 993px)" fetchpriority="high">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=2.2">
+  <link rel="stylesheet" href="css/style.css?v=2.3">
 
   <!-- Optimized Non-Blocking Google Fonts Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -264,7 +264,7 @@
           <source media="(min-width: 993px)" srcset="images/hero-img-1.avif" type="image/avif">
           <source media="(min-width: 993px)" srcset="images/hero-img-1.webp" type="image/webp">
           <img src="images/hero-img-1.webp" alt="Villux profi villanyszerelő szakember sisakban és szervizfelszerelésben"
-            class="hero-cutout-img" width="645" height="777" loading="lazy" decoding="async">
+            class="hero-cutout-img" width="645" height="777" loading="eager" fetchpriority="high" decoding="async">
         </picture>
 
         <!-- Yellow Emergency Guarantee Floating Card (Matches Concept 1 Design) -->
@@ -468,7 +468,7 @@
       <div class="why-visual-box">
         <div class="why-image-card">
           <img src="images/team.avif" alt="Villux villanyszerelő csapat megbeszélés közben" width="600" height="450"
-            loading="lazy">
+            loading="lazy" decoding="async">
           <div class="badge-experience">
             <div class="number">10+</div>
             <div class="label">Év tapasztalat</div>
@@ -1390,7 +1390,10 @@
         <!-- Project 1 -->
         <div class="project-card">
           <div class="project-thumb">
-            <img src="images/fusebox.jpg" alt="Elosztótábla korszerűsítés Újpest" loading="lazy">
+            <picture>
+              <source srcset="images/fusebox.avif" type="image/avif">
+              <img src="images/fusebox.jpg" alt="Elosztótábla korszerűsítés Újpest" loading="lazy" decoding="async" width="800" height="534">
+            </picture>
             <span class="project-status-pill">Átadva</span>
           </div>
           <div class="project-body">
@@ -1407,7 +1410,10 @@
         <!-- Project 2 -->
         <div class="project-card">
           <div class="project-thumb">
-            <img src="images/panel-work.jpg" alt="Éjszakai zárlatelhárítás Budapest" loading="lazy">
+            <picture>
+              <source srcset="images/panel-work-new.avif" type="image/avif">
+              <img src="images/panel-work.jpg" alt="Éjszakai zárlatelhárítás Budapest" loading="lazy" decoding="async" width="800" height="534">
+            </picture>
             <span class="project-status-pill">Átadva</span>
           </div>
           <div class="project-body">
@@ -1424,7 +1430,10 @@
         <!-- Project 3 -->
         <div class="project-card">
           <div class="project-thumb">
-            <img src="images/lighting.jpg" alt="Design világítás kiépítés Budaörs" loading="lazy">
+            <picture>
+              <source srcset="images/lighting.avif" type="image/avif">
+              <img src="images/lighting.jpg" alt="Design világítás kiépítés Budaörs" loading="lazy" decoding="async" width="800" height="534">
+            </picture>
             <span class="project-status-pill">Átadva</span>
           </div>
           <div class="project-body">
@@ -2075,7 +2084,7 @@
   <div id="toastMsg" class="toast-msg"></div>
 
   <!-- Main JavaScript File -->
-  <script src="js/main.js?v=2.2" defer></script>
+  <script src="js/main.js?v=2.3" defer></script>
 </body>
 
 </html>
