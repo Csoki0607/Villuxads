@@ -481,7 +481,7 @@ const GOOGLE_ADS_ID = 'AW-18536371813';
 // megadható itt (pl. 'AW-18536371813/AbCdEfGhIj'):
 window.VILLUX_ADS_CONFIG = {
   adsId: GOOGLE_ADS_ID,
-  phoneConversionLabel: '', // Opcionális: pl. 'AW-18536371813/xxxxxxxxxx'
+  phoneConversionLabel: 'AW-18536371813/lCIeCOfhtqkdEOWs6oZF', // Telefonáló potenciális ügyfél
   formConversionLabel: ''   // Opcionális: pl. 'AW-18536371813/yyyyyyyyyy'
 };
 
