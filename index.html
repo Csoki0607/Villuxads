@@ -38,9 +38,14 @@
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f6ba13'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
 
-  <!-- Google Fonts Preconnect -->
+  <!-- Preload Critical LCP Hero Image for Instant Mobile Rendering -->
+  <link rel="preload" as="image" href="images/hero-img-1.png" type="image/png" fetchpriority="high">
+
+  <!-- Optimized Google Fonts (Non-blocking with display:swap) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -90,7 +95,6 @@
     <div class="container top-bar-inner">
       <div class="top-bar-left">
         <div class="top-bar-item">
-          <span class="pulse-dot" aria-hidden="true"></span>
           <span class="top-bar-text">
             <strong class="top-bar-highlight">0–24 SOS Ügyelet:</strong>
             <span class="top-bar-sub">Kiszállás akár 30–60 percen belül Budapesten és Pest megyében</span>
@@ -130,7 +134,6 @@
         </div>
         <div class="logo-text">
           VILLUX
-          <span class="logo-tag">0-24 SOS</span>
         </div>
       </a>
 
@@ -250,7 +253,7 @@
       <div class="hero-electrician-col">
         <div class="hero-electrician-glow"></div>
         <img src="images/hero-img-1.png" alt="Villux profi villanyszerelő szakember sisakban és szervizfelszerelésben"
-          class="hero-cutout-img" width="645" height="777" loading="eager" fetchpriority="high">
+          class="hero-cutout-img" width="645" height="777" loading="eager" fetchpriority="high" decoding="async">
 
         <!-- Yellow Emergency Guarantee Floating Card (Matches Concept 1 Design) -->
         <div class="hero-yellow-trust-badge">
@@ -273,7 +276,7 @@
       <div class="mobile-electrician-wrap">
         <div class="hero-electrician-glow"></div>
         <img src="images/hero-img-1.png" alt="Villux villanyszerelő szakember" class="mobile-cutout-img" width="645"
-          height="777" loading="eager">
+          height="777" loading="eager" fetchpriority="high" decoding="async">
       </div>
 
       <!-- 2. Yellow Emergency Card -->
@@ -652,7 +655,8 @@
         <!-- Service 5: Dugalj, kapcsoló & lámpaszerelés -->
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/lighting.jpg" alt="Konnektor csere és lámpaszerelés Budapest" loading="lazy">
+            <img src="images/vilagitas.avif" alt="Konnektor csere és lámpaszerelés Budapest" loading="lazy"
+              decoding="async" width="600" height="400">
             <div class="service-icon-floating">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 style="width:24px;height:24px;">
@@ -693,7 +697,8 @@
         <!-- Service 6: Teljes hálózatfelújítás -->
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/security-camera.jpg" alt="Teljes villamos hálózat kiépítése és felújítás" loading="lazy">
+            <img src="images/halozatepites.avif" alt="Teljes villamos hálózat kiépítése és felújítás" loading="lazy"
+              decoding="async" width="600" height="400">
             <div class="service-icon-floating">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 style="width:24px;height:24px;">
@@ -1436,8 +1441,11 @@
             otthonába, irodájába vagy üzlethelyiségébe.
           </p>
           <div style="display:flex;align-items:center;gap:14px;">
-            <div style="font-family:var(--font-heading);font-size:1.8rem;font-weight:900;color:var(--accent-gold);white-space:nowrap;">Akár 30–60</div>
-            <div style="font-size:0.86rem;color:var(--text-light);font-weight:600;line-height:1.45;">perc alatt kiérünk bárhova Budapesten és Pest megyében!</div>
+            <div
+              style="font-family:var(--font-heading);font-size:1.8rem;font-weight:900;color:var(--accent-gold);white-space:nowrap;">
+              Akár 30–60</div>
+            <div style="font-size:0.86rem;color:var(--text-light);font-weight:600;line-height:1.45;">perc alatt kiérünk
+              bárhova Budapesten és Pest megyében!</div>
           </div>
         </div>
 
@@ -1785,8 +1793,10 @@
           </button>
           <div class="accordion-body">
             <p>
-              A forgalmi viszonyok függvényében <strong>akár 30–60 perc alatt kiérünk bárhova Budapesten és Pest megyében</strong>.
-              Telefonáláskor diszpécserünk azonnal felméri a helyzetet és tájékoztatja Önt a legközelebbi szabad szervizautónk
+              A forgalmi viszonyok függvényében <strong>akár 30–60 perc alatt kiérünk bárhova Budapesten és Pest
+                megyében</strong>.
+              Telefonáláskor diszpécserünk azonnal felméri a helyzetet és tájékoztatja Önt a legközelebbi szabad
+              szervizautónk
               pontos várható érkezéséről!
             </p>
           </div>
@@ -1868,7 +1878,6 @@
             </div>
             <div class="logo-text">
               VILLUX
-              <span class="logo-tag">0-24 SOS</span>
             </div>
           </a>
           <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.65;margin-bottom:20px;">
@@ -2023,7 +2032,7 @@
   <div id="toastMsg" class="toast-msg"></div>
 
   <!-- Main JavaScript File -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>
