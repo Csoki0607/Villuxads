@@ -6,7 +6,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18536371813"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'AW-18536371813');
@@ -141,7 +141,7 @@
           <li><a href="#szolgaltatasok" class="nav-link">Szolgáltatások</a></li>
           <li><a href="#arak" class="nav-link">Áraink</a></li>
           <li><a href="#kalkulator" class="nav-link">Árkalkulátor</a></li>
-          <li><a href="#referenciak" class="nav-link">Referenciák</a></li>
+          <!-- <li><a href="#referenciak" class="nav-link">Referenciák</a></li> -->
           <li><a href="#gyik" class="nav-link">GYIK</a></li>
           <li><a href="#kapcsolat" class="nav-link">Kapcsolat</a></li>
         </ul>
@@ -448,7 +448,7 @@
       <!-- Right: Visual Box with Team Photo & Badges -->
       <div class="why-visual-box">
         <div class="why-image-card">
-          <img src="images/team.jpg" alt="Villux villanyszerelő csapat megbeszélés közben" width="600" height="450"
+          <img src="images/team.avif" alt="Villux villanyszerelő csapat megbeszélés közben" width="600" height="450"
             loading="lazy">
           <div class="badge-experience">
             <div class="number">10+</div>
@@ -491,7 +491,7 @@
         <!-- Service 1: SOS Villanyszerelés -->
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/panel-work.jpg" alt="SOS villanyszerelés és hibajavítás Budapest" loading="lazy">
+            <img src="images/panel-work.avif" alt="SOS villanyszerelés és hibajavítás Budapest" loading="lazy">
             <div class="service-badge-urgent">
               <span class="pulse-dot" style="background:#fff;"></span> 0-24 SOS
             </div>
@@ -530,8 +530,7 @@
         <!-- Service 2: Zárlat és hibajavítás -->
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/hero-electrician.jpg" alt="Zárlat elhárítás és hibafeltárás falbontás nélkül"
-              loading="lazy">
+            <img src="images/hibajavitas.avif" alt="Zárlat elhárítás és hibafeltárás falbontás nélkül" loading="lazy">
             <div class="service-icon-floating">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 style="width:24px;height:24px;">
@@ -570,7 +569,7 @@
         <!-- Service 3: Elosztótábla & FI-relé -->
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/fusebox.jpg" alt="Elosztótábla csere és FI-relé életvédelem" loading="lazy">
+            <img src="images/eloszto.jpg" alt="Elosztótábla csere és FI-relé életvédelem" loading="lazy">
             <div class="service-icon-floating">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 style="width:24px;height:24px;">
@@ -614,7 +613,7 @@
         <!-- Service 4: Készülékbekötés garanciával -->
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/van.jpg" alt="Villanytűzhely és indukciós főzőlap szakszerű bekötése" loading="lazy">
+            <img src="images/fozolap.webp" alt="Villanytűzhely és indukciós főzőlap szakszerű bekötése" loading="lazy">
             <div class="service-icon-floating">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 style="width:24px;height:24px;">
@@ -1349,9 +1348,10 @@
   </section>
 
   <!-- ==========================================================================
-       RECENT PROJECTS (REFERENCIÁK)
+       RECENT PROJECTS (REFERENCIÁK) - IDEIGLENESEN KIKAPCSOLVA (display: none)
+       Amikor megvannak a fotók, csak töröld a style="display: none;" attribútumot!
        ========================================================================== -->
-  <section class="projects-section" id="referenciak">
+  <section class="projects-section" id="referenciak" style="display: none;">
     <div class="container">
       <div class="text-center">
         <div class="section-badge">Valódi Referenciák</div>
@@ -1762,7 +1762,9 @@
           </button>
           <div class="accordion-body">
             <p>
-              Nálunk <strong>nincs külön kiszállási díj (0 Ft)</strong> elvégzett munka esetén Budapesten és Pest megyében sem! Ön kizárólag az elvégzett javítás és szerelés előre egyeztetett fix munkadíját fizeti. Nincsenek rejtett díjak vagy meglepetések.
+              Nálunk <strong>nincs külön kiszállási díj (0 Ft)</strong> elvégzett munka esetén Budapesten és Pest
+              megyében sem! Ön kizárólag az elvégzett javítás és szerelés előre egyeztetett fix munkadíját fizeti.
+              Nincsenek rejtett díjak vagy meglepetések.
             </p>
           </div>
         </div>
@@ -1881,7 +1883,7 @@
             <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
             <li><a href="#arak">Hivatalos Árlista</a></li>
             <li><a href="#kalkulator">Online Árkalkulátor</a></li>
-            <li><a href="#referenciak">Referenciák</a></li>
+            <!-- <li><a href="#referenciak">Referenciák</a></li> -->
             <li><a href="#gyik">Gyakori Kérdések</a></li>
             <li><a href="#kapcsolat">Kapcsolatfelvétel</a></li>
           </ul>
