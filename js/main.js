@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPhoneCopy();
   initSmoothScroll();
   initGoogleAdsTracking();
+  initCookieConsent();
 });
 
 /* --------------------------------------------------------------------------
@@ -567,4 +568,50 @@ function initGoogleAdsTracking() {
     });
   });
 }
+
+/* --------------------------------------------------------------------------
+   10. MINIMAL COOKIE BANNER (NON-INTRUSIVE & GOOGLE CONSENT MODE V2)
+   -------------------------------------------------------------------------- */
+function initCookieConsent() {
+  const banner = document.getElementById('cookieBanner');
+  const acceptBtn = document.getElementById('cookieAcceptBtn');
+  if (!banner || !acceptBtn) return;
+
+  // Ha korábban már elfogadta, azonnal elrejtjük és beállítjuk a Google consent-et
+  const consent = localStorage.getItem('villux_cookie_consent');
+  if (consent === 'accepted') {
+    banner.style.display = 'none';
+    if (typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted'
+      });
+    }
+    return;
+  }
+
+  // Ha még nem fogadta el, finoman megjelenítjük
+  banner.classList.remove('hidden');
+
+  acceptBtn.addEventListener('click', () => {
+    localStorage.setItem('villux_cookie_consent', 'accepted');
+    banner.classList.add('hidden');
+    setTimeout(() => {
+      banner.style.display = 'none';
+    }, 280);
+
+    // Google Ads Consent Mode v2 engedélyezése
+    if (typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted'
+      });
+    }
+  });
+}
+
 

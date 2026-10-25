@@ -3486,3 +3486,76 @@ textarea.form-control {
     transform: rotate(360deg);
   }
 }
+
+/* ==========================================================================
+   MINIMAL COOKIE BANNER (NON-INTRUSIVE FOR EMERGENCY CALL CONVERSIONS)
+   ========================================================================== */
+.cookie-banner {
+  position: fixed;
+  bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+  left: 10px;
+  right: 10px;
+  max-width: 440px;
+  margin: 0 auto;
+  background: rgba(4, 23, 17, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(246, 186, 19, 0.35);
+  border-radius: 10px;
+  padding: 8px 12px;
+  z-index: 9990;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.cookie-banner.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+}
+
+.cookie-text {
+  font-size: 0.74rem;
+  color: #d1ded8;
+  line-height: 1.35;
+}
+
+.cookie-buttons {
+  flex-shrink: 0;
+}
+
+.btn-cookie-accept {
+  background: var(--accent-gold);
+  color: #041711;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.btn-cookie-accept:hover {
+  background: #ffc82a;
+  transform: translateY(-1px);
+}
+
+@media (min-width: 769px) {
+  .cookie-banner {
+    bottom: 24px;
+    left: 24px;
+    right: auto;
+    max-width: 390px;
+    margin: 0;
+    padding: 10px 14px;
+    border-radius: 12px;
+  }
+}
