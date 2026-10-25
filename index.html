@@ -2,6 +2,30 @@
 <html lang="hu">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Villux | 0-24 Villanyszerelő Gyorsszolgálat Budapesten és Pest Megyében</title>
+
+  <!-- Preload Critical LCP Mobile Hero Image (33KB AVIF) -->
+  <link rel="preload" as="image" href="images/hero-mobile.avif" type="image/avif" media="(max-width: 992px)" fetchpriority="high">
+  <link rel="preload" as="image" href="images/hero-img-1.avif" type="image/avif" media="(min-width: 993px)" fetchpriority="high">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Optimized Non-Blocking Google Fonts Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap">
+  </noscript>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18536371813"></script>
   <script>
@@ -11,10 +35,6 @@
 
     gtag('config', 'AW-18536371813');
   </script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Villux | 0-24 Villanyszerelő Gyorsszolgálat Budapesten és Pest Megyében</title>
 
   <!-- SEO Meta Tags for High Converting Advertising Landing Page -->
   <meta name="description"
@@ -37,25 +57,6 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f6ba13'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
-
-  <!-- Preload Critical LCP Mobile Hero Image (33KB AVIF) -->
-  <link rel="preload" as="image" href="images/hero-mobile.avif" type="image/avif" fetchpriority="high">
-
-  <!-- Optimized Non-Blocking Google Fonts Loading -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
-    media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap">
-  </noscript>
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
 
   <!-- Schema.org Structured Data for Local Electrician & Emergency Service -->
   <script type="application/ld+json">
@@ -260,10 +261,10 @@
       <div class="hero-electrician-col">
         <div class="hero-electrician-glow"></div>
         <picture>
-          <source srcset="images/hero-img-1.avif" type="image/avif">
-          <source srcset="images/hero-img-1.webp" type="image/webp">
-          <img src="images/hero-img-1.png" alt="Villux profi villanyszerelő szakember sisakban és szervizfelszerelésben"
-            class="hero-cutout-img" width="645" height="777" loading="eager" fetchpriority="high" decoding="async">
+          <source media="(min-width: 993px)" srcset="images/hero-img-1.avif" type="image/avif">
+          <source media="(min-width: 993px)" srcset="images/hero-img-1.webp" type="image/webp">
+          <img src="images/hero-img-1.webp" alt="Villux profi villanyszerelő szakember sisakban és szervizfelszerelésben"
+            class="hero-cutout-img" width="645" height="777" loading="lazy" decoding="async">
         </picture>
 
         <!-- Yellow Emergency Guarantee Floating Card (Matches Concept 1 Design) -->
@@ -287,8 +288,8 @@
       <div class="mobile-electrician-wrap">
         <div class="hero-electrician-glow"></div>
         <picture>
-          <source srcset="images/hero-mobile.avif" type="image/avif">
-          <source srcset="images/hero-mobile.webp" type="image/webp">
+          <source media="(max-width: 992px)" srcset="images/hero-mobile.avif" type="image/avif">
+          <source media="(max-width: 992px)" srcset="images/hero-mobile.webp" type="image/webp">
           <img src="images/hero-mobile.webp" alt="Villux villanyszerelő szakember" class="mobile-cutout-img" width="380"
             height="458" loading="eager" fetchpriority="high" decoding="async">
         </picture>
