@@ -1,0 +1,12 @@
+node_modules/
+.git-portable/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+.vercel
+koncepcio.png
+koncepcio2.png
+images/github-recovery-codes.txt
+images/*.zip

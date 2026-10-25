@@ -1,0 +1,20 @@
+{
+  "name": "villux-landing-page",
+  "version": "1.0.0",
+  "description": "Villux 0-24 Villanyszerelő Gyorsszolgálat - Hirdetési Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "build": "node -e \"console.log('Build completed successfully for Vercel')\""
+  },
+  "keywords": [
+    "villanyszerelő",
+    "gyorsszolgálat",
+    "budapest",
+    "villux",
+    "0-24"
+  ],
+  "author": "Villux Kft.",
+  "license": "MIT"
+}
