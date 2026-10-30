@@ -551,6 +551,21 @@ button {
   padding-bottom: 0;
 }
 
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 16px;
+  padding: 7px 12px;
+  border: 1px solid var(--accent-gold-border);
+  border-radius: var(--radius-pill);
+  background: var(--accent-gold-subtle);
+  color: var(--accent-gold);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
 .desktop-br {
   display: inline;
 }
@@ -2835,12 +2850,28 @@ textarea.form-control {
     text-align: left;
   }
 
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0 0 13px;
+    padding: 7px 11px;
+    border: 1px solid rgba(246, 186, 19, 0.32);
+    border-radius: 999px;
+    background: rgba(246, 186, 19, 0.09);
+    color: var(--accent-gold);
+    font-size: 0.69rem;
+    font-weight: 800;
+    letter-spacing: 0.055em;
+  }
+
   .hero-title {
-    font-size: clamp(1.82rem, 6.2vw, 2.3rem);
-    line-height: 1.22;
-    margin-bottom: 14px;
+    font-size: clamp(2rem, 7.1vw, 2.55rem);
+    line-height: 1.12;
+    margin-bottom: 13px;
     text-align: left;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.035em;
+    max-width: 15ch;
   }
 
   .hero-title .highlight-gold {

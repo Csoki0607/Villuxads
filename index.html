@@ -7,8 +7,10 @@
   <title>Villux | 0-24 Villanyszerelő Gyorsszolgálat Budapesten és Pest Megyében</title>
 
   <!-- Preload Critical LCP Mobile Hero Image (33KB AVIF) -->
-  <link rel="preload" as="image" href="images/hero-mobile.avif" type="image/avif" media="(max-width: 992px)" fetchpriority="high">
-  <link rel="preload" as="image" href="images/hero-img-1.avif" type="image/avif" media="(min-width: 993px)" fetchpriority="high">
+  <link rel="preload" as="image" href="images/hero-mobile.avif" type="image/avif" media="(max-width: 992px)"
+    fetchpriority="high">
+  <link rel="preload" as="image" href="images/hero-img-1.avif" type="image/avif" media="(min-width: 993px)"
+    fetchpriority="high">
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css?v=2.3">
@@ -34,6 +36,18 @@
     gtag('js', new Date());
 
     gtag('config', 'AW-18536371813');
+
+    // Google Ads – Telefonáló potenciális ügyfél konverzió
+    // Csak telefonhívásra mutató link kattintásakor küldünk konverziót.
+    document.addEventListener('click', function (event) {
+      var phoneLink = event.target.closest('a[href^="tel:"]');
+      if (!phoneLink) return;
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18536371813/lCIeCOfhtqkdEOWs6oZF'
+      });
+    });
+
   </script>
 
   <!-- SEO Meta Tags for High Converting Advertising Landing Page -->
@@ -189,19 +203,17 @@
     <div class="container hero-grid">
       <!-- Left Column: Copy, Emergency Call CTAs & Trust Perks -->
       <div class="hero-content">
-        <!-- High-Impact Emergency Heading -->
+        <!-- Hero message: 0–24 SOS gyorsszolgálat az elsődleges profil -->
+        <div class="hero-eyebrow"><span class="pulse-dot"></span> 0–24 SOS VILLANYSZERELŐ GYORSSZOLGÁLAT</div>
         <h1 class="hero-title">
-          0–24 SOS Villanyszerelő <br class="desktop-br">Gyorsszolgálat <br class="desktop-br">
-          <span class="highlight-gold">Azonnali Kiszállás 30–60 Perc</span>
+          0–24 SOS Villanyszerelő <span class="highlight-gold">Gyorsszolgálat</span>
         </h1>
 
-        <!-- High-Empathy Problem & Reassurance Copy -->
         <p class="hero-description">
-          <span class="hero-desc-lead">Áramszünet? Leverte a biztosítékot, szikrázik a tabló vagy égett szagot
-            érez?</span>
-          Ne kockáztasson áramütést vagy lakástüzet! Regisztrált mestereink <strong>éjjel-nappal azonnal
-            indulnak</strong> teljesen felszerelt szervizautóval Budapesten és Pest megyében. Előre egyeztetett fix
-          munkadíjak meglepetések nélkül, <strong>100% írásos garanciával</strong> és azonnali számlával.
+          <span class="hero-desc-lead">Sürgős villanyszerelési hiba? Hívjon minket, és kérjen gyors segítséget!</span>
+          Zárlat, áramszünet, biztosítékprobléma vagy más sürgős elektromos hiba esetén számíthat ránk Budapesten és
+          Pest megyében. Emellett teljes villanyszerelést, elektromos hálózatfelújítást és új hálózatok kiépítését is
+          vállaljuk.
         </p>
 
         <!-- Irresistible Call-to-Action Group -->
@@ -217,14 +229,14 @@
               </svg>
             </span>
             <span class="cta-call-text-group">
-              <span class="cta-call-label">AZONNALI SOS HÍVÁS</span>
+              <span class="cta-call-label">KÉRJEN SEGÍTSÉGET TELEFONON</span>
               <span class="cta-call-num">+36 70 306 8409</span>
             </span>
           </a>
 
-          <!-- Secondary CTA: Transparent Prices & Tariffs -->
-          <a href="#kapcsolat" class="hero-cta-secondary" title="Kapcsolataink megtekintése">
-            <span>Kapcsolatfelvétel</span>
+          <!-- Secondary CTA: az eredeti árkalkulátorhoz vezető útvonal változatlan -->
+          <a href="#kalkulator" class="hero-cta-secondary" title="Online árkalkulátor megnyitása">
+            <span>Árkalkulátor</span>
           </a>
         </div>
 
@@ -234,25 +246,25 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
-            <span>Akár 30–60 perc kiérkezés</span>
+            <span>0–24 SOS elérhetőség</span>
           </div>
           <div class="hero-check-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
-            <span>Megoldás 1 kiszállással</span>
+            <span>Hibajavítás és hálózatépítés</span>
           </div>
           <div class="hero-check-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
-            <span>Előre fixált munkadíjak</span>
+            <span>Előzetes egyeztetés</span>
           </div>
           <div class="hero-check-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
-            <span>100% Írásos garancia & számla</span>
+            <span>Számla és írásos garancia</span>
           </div>
         </div>
       </div>
@@ -263,8 +275,9 @@
         <picture>
           <source media="(min-width: 993px)" srcset="images/hero-img-1.avif" type="image/avif">
           <source media="(min-width: 993px)" srcset="images/hero-img-1.webp" type="image/webp">
-          <img src="images/hero-img-1.webp" alt="Villux profi villanyszerelő szakember sisakban és szervizfelszerelésben"
-            class="hero-cutout-img" width="645" height="777" loading="eager" fetchpriority="high" decoding="async">
+          <img src="images/hero-img-1.webp"
+            alt="Villux profi villanyszerelő szakember sisakban és szervizfelszerelésben" class="hero-cutout-img"
+            width="645" height="777" loading="eager" fetchpriority="high" decoding="async">
         </picture>
 
         <!-- Yellow Emergency Guarantee Floating Card (Matches Concept 1 Design) -->
@@ -275,8 +288,8 @@
             </svg>
           </div>
           <div class="badge-text-wrap">
-            <div class="badge-title">⚡ 0–24 HÁLÓZATI ÜGYELET</div>
-            <div class="badge-stat"><strong>95%</strong> <span>azonnali megoldás 1 kiszállással</span></div>
+            <div class="badge-title">⚡ 0–24 SOS GYORSSZOLGÁLAT</div>
+            <div class="badge-stat"><strong>0–24</strong> <span>villanyszerelői telefonos ügyelet</span></div>
           </div>
         </div>
       </div>
@@ -298,8 +311,9 @@
       <!-- 2. Yellow Emergency Card -->
       <div class="concept-card concept-card-yellow mobile-card">
         <div class="card-yellow-badge-tag">⚡ 0–24 HÁLÓZATI ÜGYELET & GYORSSZOLGÁLAT</div>
-        <div class="card-yellow-title">Azonnali Hibaelhárítás Felszerelt Szervizautóval</div>
-        <p class="card-yellow-desc">Minden alkatrész a helyszínen – azonnali javítás rejtett költségek nélkül.</p>
+        <div class="card-yellow-title">0–24 SOS villanyszerelő gyorsszolgálat</div>
+        <p class="card-yellow-desc">Sürgős hibák gyors elhárítása, emellett teljes villanyszerelés és hálózatfelújítás
+          is.</p>
         <div class="card-yellow-footer">
           <div class="circle-lightning-icon">
             <svg viewBox="0 0 24 24" fill="currentColor">
@@ -307,8 +321,8 @@
             </svg>
           </div>
           <div class="card-yellow-stat">
-            <span class="card-stat-number">95%</span>
-            <span class="card-stat-label">Megoldás 1 kiszállással</span>
+            <span class="card-stat-number">0–24</span>
+            <span class="card-stat-label">SOS telefonos elérhetőség</span>
           </div>
         </div>
       </div>
@@ -1392,7 +1406,8 @@
           <div class="project-thumb">
             <picture>
               <source srcset="images/fusebox.avif" type="image/avif">
-              <img src="images/fusebox.jpg" alt="Elosztótábla korszerűsítés Újpest" loading="lazy" decoding="async" width="800" height="534">
+              <img src="images/fusebox.jpg" alt="Elosztótábla korszerűsítés Újpest" loading="lazy" decoding="async"
+                width="800" height="534">
             </picture>
             <span class="project-status-pill">Átadva</span>
           </div>
@@ -1412,7 +1427,8 @@
           <div class="project-thumb">
             <picture>
               <source srcset="images/panel-work-new.avif" type="image/avif">
-              <img src="images/panel-work.jpg" alt="Éjszakai zárlatelhárítás Budapest" loading="lazy" decoding="async" width="800" height="534">
+              <img src="images/panel-work.jpg" alt="Éjszakai zárlatelhárítás Budapest" loading="lazy" decoding="async"
+                width="800" height="534">
             </picture>
             <span class="project-status-pill">Átadva</span>
           </div>
@@ -1432,7 +1448,8 @@
           <div class="project-thumb">
             <picture>
               <source srcset="images/lighting.avif" type="image/avif">
-              <img src="images/lighting.jpg" alt="Design világítás kiépítés Budaörs" loading="lazy" decoding="async" width="800" height="534">
+              <img src="images/lighting.jpg" alt="Design világítás kiépítés Budaörs" loading="lazy" decoding="async"
+                width="800" height="534">
             </picture>
             <span class="project-status-pill">Átadva</span>
           </div>
@@ -1806,11 +1823,13 @@
           <div class="accordion-body">
             <p>
               Nálunk <strong>nincs külön kiszállási díj (0 Ft) elvégzett munka esetén</strong> Budapesten és Pest
-              megyében sem! Ön kizárólag az elvégzett javítás és szerelés előre egyeztetett fix munkadíját fizeti, nincsenek
+              megyében sem! Ön kizárólag az elvégzett javítás és szerelés előre egyeztetett fix munkadíját fizeti,
+              nincsenek
               rejtett költségek.
             </p>
             <p style="margin-top:10px;">
-              Amennyiben a helyszínre érkezéskor kiderül, hogy nincs szükség villanyszerelői beavatkozásra, vagy felesleges
+              Amennyiben a helyszínre érkezéskor kiderül, hogy nincs szükség villanyszerelői beavatkozásra, vagy
+              felesleges
               volt a riasztás (pl. külső szolgáltatói áramszünet áll fenn, vagy a helyszínen elállnak a javítástól), úgy
               <strong>20 000 Ft-os kiszállási és hibafeltárási díj</strong> fizetendő a szervizautó indításáért.
             </p>
