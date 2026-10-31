@@ -10,3 +10,7 @@ koncepcio.png
 koncepcio2.png
 images/github-recovery-codes.txt
 images/*.zip
+*.exe
+images/*.exe
+*.txt
+!README.md

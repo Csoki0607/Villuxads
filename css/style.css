@@ -1704,7 +1704,7 @@ button {
 /* Location Selector */
 .location-selector {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 
@@ -2866,12 +2866,13 @@ textarea.form-control {
   }
 
   .hero-title {
-    font-size: clamp(2rem, 7.1vw, 2.55rem);
-    line-height: 1.12;
-    margin-bottom: 13px;
+    font-size: clamp(1.85rem, 6.6vw, 2.45rem);
+    line-height: 1.15;
+    margin-bottom: 14px;
     text-align: left;
-    letter-spacing: -0.035em;
-    max-width: 15ch;
+    letter-spacing: -0.03em;
+    max-width: 100%;
+    text-wrap: balance;
   }
 
   .hero-title .highlight-gold {

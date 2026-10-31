@@ -263,7 +263,8 @@ function initPriceCalculator() {
     applyCalcBtn.addEventListener('click', () => {
       const messageField = document.getElementById('formMessage');
       const serviceSelect = document.getElementById('formService');
-      const contactSection = document.getElementById('kapcsolat');
+      const quoteForm = document.getElementById('quoteForm');
+      const nameInput = document.getElementById('formName');
 
       let summaryText = `[Kalkulált igények az oldalról]:\n`;
       summaryListEl.querySelectorAll('li').forEach(li => {
@@ -280,8 +281,26 @@ function initPriceCalculator() {
 
       showToast('Kalkuláció átmásolva az űrlaphoz!');
 
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
+      // Smooth scroll directly to form inputs (avoids scrolling to section top on mobile)
+      if (quoteForm) {
+        const headerOffset = 90;
+        const formTop = quoteForm.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: formTop,
+          behavior: 'smooth'
+        });
+
+        // Focus the first name input so user can start filling immediately
+        setTimeout(() => {
+          if (nameInput) {
+            nameInput.focus({ preventScroll: true });
+          }
+        }, 550);
+      } else {
+        const contactSection = document.getElementById('kapcsolat');
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     });
   }
