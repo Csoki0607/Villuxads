@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Villux – Google Ads landing page fejlesztési brief</title>
+<style>
+:root{--ink:#172033;--muted:#5b6678;--line:#dce3ec;--blue:#175cd3;--pale:#f3f6fb}
+*{box-sizing:border-box}body{margin:0;background:#eef2f7;color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+main{max-width:1000px;margin:30px auto;padding:0 18px 55px}article{background:#fff;border:1px solid var(--line);border-radius:16px;padding:clamp(22px,4vw,46px)}
+h1,h2,h3{line-height:1.22;letter-spacing:-.02em}h1{font-size:clamp(2rem,5vw,3rem);margin:.25em 0}h2{font-size:1.55rem;margin-top:2.1em;padding-bottom:.45em;border-bottom:1px solid var(--line)}h3{font-size:1.15rem;margin-top:1.5em}
+p,li{color:#354056}.lead{font-size:1.12rem;color:var(--muted)}.tag{display:inline-block;background:#eaf1ff;color:#1749a5;padding:5px 10px;border-radius:99px;font-weight:700;font-size:.8rem}
+.note,.warn{padding:14px 17px;border-radius:8px;margin:18px 0}.note{background:#f1f6ff;border-left:4px solid var(--blue)}.warn{background:#fff7e8;border-left:4px solid #d97706}
+table{width:100%;border-collapse:collapse;margin:14px 0 22px;font-size:.94rem}th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}th{background:var(--pale)}
+code{background:#f0f3f8;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}.small{font-size:.9rem;color:var(--muted)}ul li,ol li{margin:.4em 0}
+@media print{body{background:#fff}main{margin:0;max-width:none;padding:0}article{border:0;padding:0}}
+</style>
+</head>
+<body><main><article>
+<span class="tag">GOOGLE ADS · LANDING PAGE SPECIFIKÁCIÓ</span>
+<h1>Villux – Google Ads konverzióra optimalizált weboldal</h1>
+<p class="lead">Ez a dokumentum kizárólag a fizetett Google Ads forgalom fogadására és a telefonhívások, illetve valódi ajánlatkérések növelésére készült. Nem SEO-projekt. A fő cél a kulcsszó, a hirdetésszöveg és a landing page közötti maximális relevancia.</p>
+
+<div class="note"><strong>AI-nak szóló fő utasítás:</strong> Először vizsgáld át a meglévő Villux projektet és annak technológiáját. Ne módosíts semmit az első felmérés és egy részletes terv jóváhagyása előtt. A meglévő arculatot, működő funkciókat, telefonszámokat és céges adatokat őrizd meg. Ne találj ki árakat, vállalásokat, értékeléseket, referenciákat vagy kiszállási időket.</div>
+
+<h2>1. A projekt valódi célja</h2>
+<ul>
+<li>A Google Ads hirdetésre kattintó látogató azonnal azt lássa, amit a keresésében keresett.</li>
+<li>A hirdetés kulcsszava, címsora, leírása és a landing page fő üzenete legyen összhangban.</li>
+<li>Mobilon a látogató azonnal tudjon telefonálni.</li>
+<li>Csökkenjen a felesleges kattintás és a bizonytalan érdeklődő, nőjön a releváns telefonhívások és megrendelések aránya.</li>
+<li>A teljesítményt valódi hívásokkal és ajánlatkérésekkel mérjük, ne csak kattintásokkal.</li>
+</ul>
+<div class="warn"><strong>Fontos:</strong> Nincs olyan megoldás, amely garantálja az első helyet, a legjobb minőségi mutatót vagy minden kulcsszóra a tökéletes hirdetési relevanciát. A cél a lehető legjobb felhasználói és hirdetési relevancia, amit teszteléssel és méréssel javítunk.</div>
+
+<h2>2. Landing page stratégia – keresési szándék szerint</h2>
+<p>Ne készítsünk minden apró kulcsszóra külön, majdnem azonos oldalt. Az azonos problémát kereső kulcsszavakat egy jól megépített, releváns oldal fogja össze. Külön oldalt akkor készítsünk, ha a szolgáltatás vagy a keresési szándék valóban eltér.</p>
+<table><thead><tr><th>Landing page</th><th>Javasolt URL</th><th>Fő keresési szándék</th></tr></thead><tbody>
+<tr><td>SOS / sürgős villanyszerelő</td><td><code>/sos-villanyszerelo-budapest</code></td><td>Sürgős hiba, azonnali telefonos segítség, zárlat, áramkimaradás.</td></tr>
+<tr><td>Általános villanyszerelő</td><td><code>/villanyszerelo-budapest</code></td><td>Általános villanyszerelés, szerelő keresése, javítás és bekötés.</td></tr>
+<tr><td>Biztosítéktábla / kismegszakító</td><td><code>/biztositektabla-szereles</code></td><td>Biztosítéktábla csere, javítás, korszerűsítés.</td></tr>
+<tr><td>Főzőlap bekötés</td><td><code>/fozolap-bekotes</code></td><td>Elektromos vagy indukciós főzőlap bekötése.</td></tr>
+<tr><td>Hálózatfelújítás</td><td><code>/villamos-halozat-felujitas</code></td><td>Elektromos hálózat felújítása, korszerűsítése.</td></tr>
+<tr><td>FI-relé / zárlat / hibakeresés</td><td>Önálló oldal csak indokolt esetben</td><td>Konkrét elektromos hiba feltárása és javítása.</td></tr>
+<tr><td>Villamos szabványosítás és VBF</td><td><code>/villamos-szabvanyositas-vbf</code></td><td>Villamos biztonsági felülvizsgálat, dokumentáció és szabványosítással kapcsolatos munkák – pontos szolgáltatási kör szerint.</td></tr>
+<tr><td>Lakásvillanyszerelés és épületvillamosság</td><td><code>/lakasvillanyszereles-epuletvillamossag</code></td><td>Lakásfelújítás villamos munkái, új vagy átalakított elektromos rendszerek kivitelezése.</td></tr>
+<tr><td>LED-világítás tervezés és kivitelezés</td><td><code>/led-vilagitas-tervezes-kivitelezes</code></td><td>LED-világítási megoldások megtervezése és kivitelezése.</td></tr>
+<tr><td>Elektromosautó-töltő kiépítés</td><td><code>/elektromos-auto-tolto-kiepites</code></td><td>Otthoni vagy telephelyi elektromosautó-töltő telepítése és az ehhez kapcsolódó villamos munkák.</td></tr>
+</tbody></table>
+<p>Az URL-ek javaslatok. Csak olyan oldal készüljön el, amelynek szolgáltatását a Villux valóban vállalja, és amelyhez van elég egyedi, hasznos tartalom.</p>
+
+<h2>3. Kulcsszó–hirdetés–oldal megfeleltetés</h2>
+<p>Az AI készítsen egy szerkeszthető kulcsszó-leképezési táblát a jelenlegi Google Ads kampányok és hirdetéscsoportok alapján. A meglévő kulcsszavakat ne módosítsa és ne törölje.</p>
+<table><thead><tr><th>Kulcsszó-csoport</th><th>Az oldal fő üzenete</th><th>Elsődleges CTA</th></tr></thead><tbody>
+<tr><td>„SOS villanyszerelő”, „villanyszerelő azonnal”, „éjszakai villanyszerelő”</td><td>Sürgős elektromos hiba esetén telefonos egyeztetés.</td><td>Hívás most</td></tr>
+<tr><td>„zárlat elhárítás”, „leveri a biztosítékot”, „nincs áram”</td><td>Hibafeltárás és javítás – az adott probléma konkrét megnevezésével.</td><td>Hiba bejelentése</td></tr>
+<tr><td>„villanyszerelő Budapest”, „villanyszerelés”</td><td>Általános lakossági villanyszerelési munkák.</td><td>Telefonálok / Ajánlatot kérek</td></tr>
+<tr><td>„biztosítéktábla csere”, „elosztótábla szerelés”</td><td>Biztosítéktábla csere, javítás és korszerűsítés.</td><td>Ajánlatot kérek</td></tr>
+<tr><td>„főzőlap bekötés”, „indukciós főzőlap bekötése”</td><td>Főzőlap bekötésének feltételei és egyeztetés.</td><td>Telefonálok / Ajánlatot kérek</td></tr>
+<tr><td>„villanyhálózat felújítás”</td><td>Tervezett hálózatfelújítás, felmérés és ajánlat.</td><td>Ajánlatot kérek</td></tr>
+<tr><td>„VBF felülvizsgálat”, „villamos biztonsági felülvizsgálat”</td><td>Villamos biztonsági felülvizsgálat és dokumentáció.</td><td>VBF-felülvizsgálatot kérek</td></tr>
+<tr><td>„regisztrált villanyszerelő”, „villamos szabványosítás”</td><td>A ténylegesen vállalt regisztrált szerelői és szabványosítási szolgáltatás.</td><td>Telefonos egyeztetés</td></tr>
+<tr><td>„lakás villanyszerelés”, „épületvillamosság”</td><td>Lakásfelújítás és épületvillamossági kivitelezés.</td><td>Ajánlatot kérek</td></tr>
+<tr><td>„LED világítás tervezés”, „LED világítás kivitelezés”</td><td>LED-világítás megtervezése és telepítése.</td><td>Ajánlatot kérek</td></tr>
+<tr><td>„elektromos autó töltő telepítés”, „EV töltő kiépítés”</td><td>Elektromosautó-töltő helyszíni felmérése és kiépítése.</td><td>Ajánlatot kérek</td></tr>
+</tbody></table>
+<p>A fenti példák nem állítják, hogy ezek mind szerepelnek a jelenlegi fiókban. A végleges térképhez a tényleges kulcsszó- és hirdetéscsoport-listát kell használni.</p>
+
+<h2>4. SOS landing page részletes felépítése</h2>
+<p><strong>URL:</strong> <code>/sos-villanyszerelo-budapest</code></p>
+<h3>Első képernyő / Hero</h3>
+<ul>
+<li>H1: „SOS villanyszerelő Budapest – gyors segítség elektromos hibák esetén”.</li>
+<li>Alcím: „Áramkimaradás, zárlat vagy más elektromos hiba esetén hívjon minket. Budapest és a ténylegesen vállalt környékbeli települések.”</li>
+<li>Azonnal látható, nagy telefonszám, kattintható <code>tel:</code> link.</li>
+<li>Elsődleges CTA: „Hívás most”.</li>
+<li>Rövid, jól olvasható szolgáltatási terület és valós elérhetőségi információ.</li>
+<li>Valós, releváns villanyszerelési fotó.</li>
+</ul>
+<h3>Probléma-alapú blokkok</h3>
+<ul>
+<li>Áramkimaradás – röviden, milyen esetben hívjanak.</li>
+<li>Zárlat / leverődő biztosíték – konkrét probléma és segítség.</li>
+<li>FI-relé hiba – mit tapasztalhat az ügyfél.</li>
+<li>Melegedő, szikrázó konnektor – biztonságos teendő és telefonos CTA.</li>
+<li>Égett szag vagy füst – ne adjon barkács tanácsot; közvetlen veszély esetén biztonságos távolság és szükség esetén 112.</li>
+<li>Biztosítéktábla hiba – releváns szolgáltatás.</li>
+</ul>
+<h3>Bizalom, folyamat, referenciák</h3>
+<ul>
+<li>Valós előnyök és szolgáltatási feltételek.</li>
+<li>Hogyan zajlik a telefonos egyeztetés és a helyszíni munka.</li>
+<li>Saját munkafotók és rövid, valós esettanulmányok.</li>
+<li>GYIK: terület, elérhetőség, várható érkezés, kiszállási és munkadíj – csak megerősített válaszokkal.</li>
+<li>Az oldal alján ismételt telefonszám és „Hívás most” CTA.</li>
+</ul>
+<div class="warn">A „0–24”, „azonnal”, „garantált kiszállás” és hasonló ígéretek csak akkor használhatók, ha a vállalkozás ténylegesen és folyamatosan biztosítani tudja őket.</div>
+
+<h2>5. Általános villanyszerelő landing page részletes felépítése</h2>
+<p><strong>URL:</strong> <code>/villanyszerelo-budapest</code></p>
+<ul>
+<li>H1: „Villanyszerelő Budapest – lakossági villanyszerelés”.</li>
+<li>Alcím: „Villanyszerelési munkák lakásokban és családi házakban: javítás, bekötés és elektromos hálózat korszerűsítése.”</li>
+<li>Telefonos CTA és ajánlatkérő CTA.</li>
+<li>Szolgáltatási blokkok: biztosítéktábla, konnektor és kapcsoló, főzőlap, hálózatfelújítás, FI-relé, lámpa bekötés – csak a ténylegesen vállalt munkák.</li>
+<li>Valós referenciák, munkafolyamat és GYIK.</li>
+<li>Rövid ajánlatkérő űrlap: név, telefonszám, település, munka típusa, üzenet.</li>
+<li>Az oldal tetején és alján is legyen egyértelmű telefonos kapcsolat.</li>
+</ul>
+
+<h2>6. További szolgáltatási landing page-ek sablonja</h2>
+<p>Minden külön szolgáltatási oldal ugyanazt a minőségi keretet használja, de a tartalom legyen valóban az adott szolgáltatásra szabva:</p>
+<ol>
+<li>H1, amely pontosan megnevezi a szolgáltatást és a célterületet.</li>
+<li>Az első képernyőn rövid magyarázat, telefonszám és megfelelő CTA.</li>
+<li>Milyen problémára vagy igényre nyújt megoldást a szolgáltatás?</li>
+<li>Milyen munkafázisokból áll a kivitelezés?</li>
+<li>Milyen esetekben szükséges helyszíni felmérés?</li>
+<li>Valós referencia vagy saját munkafotó.</li>
+<li>Az adott szolgáltatásra vonatkozó GYIK.</li>
+<li>Kapcsolatfelvétel és ismételt CTA.</li>
+</ol>
+<p>Ne legyen sablonosan átírt, kulcsszóhalmozó szöveg. A látogató kérdésére kell válaszolnia, és világossá kell tennie a következő lépést.</p>
+
+
+<h2>7. Kiemelt új szolgáltatási oldalak</h2>
+<h3>7.1 Villamos szabványosítás és VBF-felülvizsgálat</h3>
+<p><strong>Javasolt URL:</strong> <code>/villamos-szabvanyositas-vbf</code></p>
+<ul>
+<li>A VBF rövidítést első előforduláskor teljes néven kell kiírni: villamos biztonsági felülvizsgálat.</li>
+<li>Külön tartalmi blokk mutassa be a VBF-felülvizsgálatot, annak célját, a folyamatot és az átadott dokumentációt – csak a ténylegesen vállalt feladatok szerint.</li>
+<li>Külön blokk foglalkozzon a regisztrált villanyszerelői tevékenységgel és a villamos szabványosítással. Pontosan tisztázni kell, milyen ügyintézést és munkát végez a vállalkozás.</li>
+<li>Ne sugallja az oldal, hogy a VBF és a regisztrált szerelői tevékenység ugyanaz a szolgáltatás vagy ugyanaz a jogosultság.</li>
+<li>Ne állítson jogosultságot, felülvizsgálói képesítést, regisztrációt vagy hatósági elfogadottságot ellenőrzés nélkül.</li>
+<li>Legyen külön GYIK például arról, mikor lehet szükség felülvizsgálatra, mit tartalmaz a dokumentáció, hogyan történik az egyeztetés és milyen adatok szükségesek az ajánlatadáshoz.</li>
+<li>CTA: „VBF-felülvizsgálatot kérek” és „Telefonos egyeztetés”.</li>
+</ul>
+<h3>7.2 Lakásfelújítás, lakásvillanyszerelés és épületvillamosság</h3>
+<p><strong>Javasolt URL:</strong> <code>/lakasvillanyszereles-epuletvillamossag</code></p>
+<ul>
+<li>Mutassa be a lakásfelújításhoz kapcsolódó villamos munkákat, új kiállások kialakítását, áthelyezést, vezetékezést és elosztóval kapcsolatos munkákat – a tényleges vállalási kör szerint.</li>
+<li>Különítse el a kisebb lakossági munkákat a teljes vagy részleges elektromos hálózat kivitelezésétől.</li>
+<li>Legyen folyamatleírás: igényfelmérés, helyszíni egyeztetés, műszaki tartalom, ajánlat, kivitelezés és átadás.</li>
+<li>CTA: „Ajánlatot kérek lakásvillanyszerelésre”.</li>
+</ul>
+<h3>7.3 LED-világítás tervezése és kivitelezése</h3>
+<p><strong>Javasolt URL:</strong> <code>/led-vilagitas-tervezes-kivitelezes</code></p>
+<ul>
+<li>Mutassa be a világítási igény felmérését, a világítási megoldások kiválasztását, a LED-es rendszerek telepítését és a vezérlés lehetőségeit, amennyiben ezeket a Villux vállalja.</li>
+<li>Használjon saját referenciafotókat, lehetőleg elkészült munkákról.</li>
+<li>Ne ígérjen konkrét energiamegtakarítást mérés vagy megalapozott számítás nélkül.</li>
+<li>CTA: „LED-világítás tervezésére kérek ajánlatot”.</li>
+</ul>
+<h3>7.4 Elektromosautó-töltő kiépítése</h3>
+<p><strong>Javasolt URL:</strong> <code>/elektromos-auto-tolto-kiepites</code></p>
+<ul>
+<li>Mutassa be az otthoni és – ha vállalt – telephelyi töltőtelepítés folyamatát.</li>
+<li>Térjen ki a helyszíni felmérésre, a meglévő hálózat és csatlakozási lehetőségek ellenőrzésére, a szükséges villamos munkákra és a töltő elhelyezésére.</li>
+<li>Ne állítson univerzális kompatibilitást vagy garantált teljesítményt a helyszín és a hálózat ellenőrzése nélkül.</li>
+<li>CTA: „Elektromosautó-töltő telepítésére kérek ajánlatot”.</li>
+</ul>
+<div class="warn"><strong>Szolgáltatási jogosultság:</strong> a VBF, a regisztrált villanyszerelői tevékenység, a szabványosítás és az elektromosautó-töltő telepítése esetén az oldal csak a ténylegesen rendelkezésre álló képesítések, regisztrációk, jogosultságok és vállalási feltételek alapján fogalmazhat. A pontos szolgáltatási tartalmat a Villuxnak kell megerősítenie.</div>
+
+<h2>7. Google Ads landing page relevancia – kötelező szabályok</h2>
+<ul>
+<li><strong>Üzenetegyezés:</strong> a keresési kifejezés, hirdetés címsora, leírása és a céloldal fő üzenete legyen összhangban.</li>
+<li><strong>Azonnali relevancia:</strong> a látogató már az első képernyőn lássa a keresett szolgáltatást.</li>
+<li><strong>Ne legyen általános főoldalra terelés:</strong> minden hirdetés a lehető legrelevánsabb konkrét oldalra érkezzen.</li>
+<li><strong>Kulcsszó-csoportok:</strong> különböző szolgáltatási szándékokhoz külön landing page és szükség esetén külön hirdetéscsoport tartozzon.</li>
+<li><strong>Földrajzi egyezés:</strong> Budapest és környéke csak a ténylegesen vállalt területekkel szerepeljen.</li>
+<li><strong>CTA-egyezés:</strong> sürgős keresésnél a hívás legyen elsődleges; tervezett munkánál a hívás mellett ajánlatkérés is legyen.</li>
+<li><strong>Átláthatóság:</strong> a szolgáltatás, a kapcsolat és a feltételek legyenek könnyen megtalálhatók.</li>
+<li><strong>Mobilélmény:</strong> gyors, stabil, egyszerűen használható oldal, zavaró felugró ablakok nélkül.</li>
+</ul>
+<p>Az AI készítsen minden meglévő hirdetéscsoporthoz egy rövid megfeleltetést: kulcsszavak → hirdetésszöveg témája → céloldal URL → elsődleges CTA → hiányzó tartalom.</p>
+
+<h2>9. Mobilos konverzió és kapcsolatfelvétel</h2>
+<ul>
+<li>A telefonszám legyen kattintható <code>tel:</code> link, és minden oldalon ugyanaz a jóváhagyott céges szám szerepeljen.</li>
+<li>Mobilon legyen fix alsó sáv „Hívás” és „Ajánlatkérés” gombbal, de ne takarja a tartalmat.</li>
+<li>A gombok legyenek nagyok, jól olvashatók és könnyen megérinthetők.</li>
+<li>Az űrlap csak a szükséges adatokat kérje el; legyen validáció, spamvédelem és sikeres beküldési visszajelzés.</li>
+<li>Ne legyen kötelező fiókregisztráció vagy felesleges lépés az ajánlatkéréshez.</li>
+<li>A látogató tudja, mi történik az űrlap elküldése után.</li>
+</ul>
+
+<h2>10. Sebesség és technikai minőség – Ads forgalomhoz</h2>
+<ul>
+<li>Mobilon gyorsan jelenjen meg a főcím, az ajánlat és a telefonos CTA.</li>
+<li>Képek legyenek megfelelően méretezve és tömörítve (WebP/AVIF, ahol támogatott).</li>
+<li>A hajtás alatti képek tölthetők késleltetve; a fő képet ne késleltesse hibás lazy loading.</li>
+<li>Minimalizáld a felesleges JavaScriptet, animációkat és külső scripteket.</li>
+<li>Ne legyen elcsúszó layout, hibás gomb, törött kép vagy mobilos vízszintes görgetés.</li>
+<li>Teszteld valós mobilnézetben és lassabb kapcsolaton is.</li>
+</ul>
+
+<h2>11. Konverziómérés – a valódi eredmény számít</h2>
+<table><thead><tr><th>Esemény</th><th>Mit jelent?</th><th>Értelmezés</th></tr></thead><tbody>
+<tr><td><code>phone_click</code></td><td>Telefonszámra kattintás.</td><td>Érdeklődési jel, nem bizonyít tényleges hívást.</td></tr>
+<tr><td><code>form_submit</code></td><td>Sikeres ajánlatkérés.</td><td>Csak sikeres beküldés után aktiválódjon.</td></tr>
+<tr><td>Híváskonverzió</td><td>Tényleges telefonhívás megfelelő híváskövetéssel.</td><td>Elsődleges üzleti mérőszám lehet, ha megbízhatóan mérjük.</td></tr>
+<tr><td>Minősített érdeklődő / megrendelés</td><td>Valódi, releváns munka és annak eredménye.</td><td>CRM-ben vagy egyszerű munkalapban érdemes visszakövetni.</td></tr>
+</tbody></table>
+<ul>
+<li>Először ellenőrizd a már meglévő Google tag, GTM, GA4 és Google Ads mérőkódokat.</li>
+<li>Ne telepíts duplikált tageket.</li>
+<li>Ne küldj személyes adatot analitikai eseményparaméterként.</li>
+<li>A hozzájárulási és adatvédelmi beállításokat tartsd tiszteletben.</li>
+<li>Különítsd el a puszta telefonkattintást a tényleges hívástól.</li>
+</ul>
+
+<h2>12. Google Ads kampányokhoz való hozzárendelés</h2>
+<table><thead><tr><th>Kampány</th><th>Tervezett céloldal</th></tr></thead><tbody>
+<tr><td>Új SOS Villux GPT</td><td><code>https://www.villux.hu/sos-villanyszerelo-budapest</code></td></tr>
+<tr><td>Új Altalanos Villux GPT</td><td><code>https://www.villux.hu/villanyszerelo-budapest</code></td></tr>
+</tbody></table>
+<p>A régi kampányok céloldalát egyelőre ne változtasd meg. A kampány URL-ek átállítása külön jóváhagyást igényel, és csak a céloldalak éles tesztje után történhet.</p>
+
+<h2>13. Fejlesztési sorrend</h2>
+<ol>
+<li>Olvasd át a projektet és a jelenlegi weboldalt; térképezd fel a technológiát, route-okat, komponenseket, űrlapokat, telefonszámokat és mérőkódokat.</li>
+<li>Készíts listát a jelenlegi Google Ads kampányok/hirdetéscsoportok és a tervezett céloldalak megfeleltetéséről, ha a hirdetésfiók adatai elérhetők. Ha nem, kérd be a kulcsszólistát.</li>
+<li>Készíts implementációs tervet és látvány-/komponensjavaslatot, de még ne módosíts kódot.</li>
+<li>Jóváhagyás után építsd meg először az SOS és az általános landing page-et.</li>
+<li>Ezután csak a valóban külön keresési szándékot lefedő szolgáltatási oldalakat készítsd el.</li>
+<li>Építsd be és teszteld a telefonos CTA-kat, űrlapokat és mérést.</li>
+<li>Végezz mobilos, asztali és sebességtesztet.</li>
+<li>Készíts végső jelentést a módosított fájlokról, az oldalak URL-jeiről, a teszteredményekről és a nyitott kérdésekről.</li>
+</ol>
+
+<h2>14. Elfogadási ellenőrzőlista</h2>
+<ul>
+<li>Mindegyik aktív hirdetéscsoporthoz egyértelműen kijelölt, releváns céloldal tartozik.</li>
+<li>A céloldal első képernyője egyértelműen megfelel a hirdetés ígéretének és a keresési szándéknak.</li>
+<li>A látogató mobilon azonnal tud telefonálni.</li>
+<li>A telefonszám minden CTA-nál helyes.</li>
+<li>Az űrlap sikeresen működik, és a beküldés visszaigazolható.</li>
+<li>A telefonkattintás és a tényleges hívás nincs összekeverve a riportokban.</li>
+<li>Nincs felesleges tartalom, zavaró felugró ablak vagy hibás navigáció.</li>
+<li>Nincsenek kitalált üzleti állítások, árak, értékelések vagy vállalások.</li>
+<li>A régi kampányok és azok URL-jei nem változtak jóváhagyás nélkül.</li>
+</ul>
+
+<h2>15. Első prompt a fejlesztő AI-nak</h2>
+<div class="note">
+<p><strong>Dolgozz a meglévő Villux weboldal projektjén a jelen HTML specifikáció alapján. A projekt kizárólag Google Ads landing page célokat szolgál; ne készíts SEO-stratégiát, kulcsszavas blogot, organikus keresési aloldalakat vagy tömeges települési oldalakat.</strong></p>
+<p>Első lépésként ne módosíts kódot. Vizsgáld át a teljes projektstruktúrát, technológiát, meglévő dizájnt, routingot, komponenseket, telefonszámokat, űrlapokat és mérőkódokat. Készíts táblázatot arról, hogy a jelenlegi Google Ads kulcsszó- és hirdetéscsoport-struktúra milyen landing page-ekhez illeszthető. Ha nincs hozzáférésed a hirdetési fiókhoz vagy kulcsszólistához, kérd be az adatokat, és ne találj ki kulcsszavakat.</p>
+<p>Ezután adj részletes fejlesztési tervet: mely oldalak kellenek, milyen szekciókkal, mely fájlok módosulnak, milyen új komponensek kellenek, hogyan mérjük a telefonhívásokat és űrlapokat, és milyen adat hiányzik. Külön magyarázd el, hogyan biztosítod a kulcsszó–hirdetés–landing page üzenetegyezést. A szolgáltatási tervben szerepeljen a VBF-felülvizsgálat és villamos szabványosítás, lakásvillanyszerelés és épületvillamosság, LED-világítás tervezése/kivitelezése, valamint elektromosautó-töltő kiépítése is. A VBF és a regisztrált villanyszerelői tevékenység külön tartalmi és jogosultsági ellenőrzést igényel; ezeket ne mosd össze.</p>
+<p>Ne találj ki céges adatot, telefonszámot, címet, árat, értékelést, referenciát, garanciát, 0–24 elérhetőséget vagy kiszállási ígéretet. Ne módosíts Google Ads kampányokat, kulcsszavakat, liciteket vagy végső URL-eket. Ne telepíts duplikált mérőkódokat. Várd meg a terv jóváhagyását, mielőtt kódot módosítasz.</p>
+<p>Jóváhagyás után kis, ellenőrizhető lépésekben fejlessz, minden lépés után tesztelj, majd adj összefoglalót a változásokról és a még szükséges emberi ellenőrzésekről.</p>
+</div>
+
+<h2>16. A fejlesztéshez szükséges, ellenőrizendő üzleti adatok</h2>
+<ul>
+<li>A pontos céges telefonszám.</li>
+<li>A tényleges szolgáltatási terület és településlista.</li>
+<li>A 0–24 elérhetőség és a kiszállási vállalás pontos feltételei.</li>
+<li>A vállalt szolgáltatások listája.</li>
+<li>Valós árak és díjak, ha nyilvánosan megjelennek.</li>
+<li>Saját referenciaképek és azok felhasználási engedélye.</li>
+<li>Az űrlap értesítési címe és adatkezelési tájékoztatója.</li>
+<li>A Google Ads aktuális kulcsszó-, hirdetéscsoport- és hirdetésszöveg-listája.</li>
+</ul>
+<p class="small">A specifikáció a Google Ads céloldal-élmény és konverzió szempontjaira összpontosít. A hirdetési eredményeket a kampánybeállítások, aukciós verseny, keresési kifejezések, ajánlattétel, költségkeret és tényleges ügyfél-visszajelzés együtt határozza meg.</p>
+</article></main></body></html>

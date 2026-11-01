@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Villanyszerelő Budapest – Megbízható Lakossági Villanyszerelés | Villux</title>
+
+  <!-- Preload Critical Hero Image -->
+  <link rel="preload" as="image" href="images/hero-mobile.avif" type="image/avif" media="(max-width: 992px)" fetchpriority="high">
+  <link rel="preload" as="image" href="images/hero-img-1.avif" type="image/avif" media="(min-width: 993px)" fetchpriority="high">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=2.7">
+
+  <!-- Optimized Non-Blocking Google Fonts Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap">
+  </noscript>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18536371813"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18536371813');
+
+    // Google Ads – Telefonáló potenciális ügyfél konverzió
+    document.addEventListener('click', function (event) {
+      var phoneLink = event.target.closest('a[href^="tel:"]');
+      if (!phoneLink) return;
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18536371813/lCIeCOfhtqkdEOWs6oZF'
+      });
+    });
+  </script>
+
+  <!-- SEO Meta Tags for Google Ads Landing Page -->
+  <meta name="description"
+    content="Villanyszerelő Budapesten és Pest megyében. Lakossági villanyszerelés: biztosítéktábla csere, konnektorok, indukciós főzőlap bekötés, hálózatfelújítás fix árakkal és garanciával. Hívjon: +36 70 306 8409!">
+  <meta name="keywords"
+    content="villanyszerelő budapest, villanyszerelő, lakossági villanyszerelés, biztosítéktábla csere, főzőlap bekötés, villanyhálózat felújítás, konnektor csere, fi-relé beépítés">
+  <meta name="author" content="Villux Villanyszerelő">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#07261d">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Villux Villanyszerelés Budapest",
+    "image": "https://www.villux.hu/images/hero-img-1.avif",
+    "telephone": "+36703068409",
+    "email": "villux024@gmail.com",
+    "url": "https://www.villux.hu/villanyszerelo-budapest",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Budapest",
+      "addressRegion": "Pest",
+      "addressCountry": "HU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 47.4979,
+      "longitude": 19.0402
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "07:00",
+      "closes": "21:00"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Budapest"},
+      {"@type": "AdministrativeArea", "name": "Pest megye"}
+    ]
+  }
+  </script>
+
+  <style>
+    /* Speciális landing page finomhangolások */
+    .landing-header {
+      background: rgba(7, 38, 29, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 14px 0;
+    }
+    .landing-header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .landing-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 1.4rem;
+    }
+    .landing-logo span {
+      color: var(--accent-gold);
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .header-phone-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-gold);
+      color: var(--primary-dark);
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      font-size: 0.95rem;
+    }
+    .header-phone-btn:hover {
+      background: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(229, 169, 59, 0.4);
+    }
+    .landing-hero {
+      position: relative;
+      background: radial-gradient(circle at 70% 30%, rgba(20, 82, 64, 0.5) 0%, rgba(7, 38, 29, 0.98) 70%),
+                  url('images/hero-img-1.avif') center/cover no-repeat;
+      padding: 60px 0 80px;
+      color: #fff;
+      overflow: hidden;
+    }
+    @media (max-width: 768px) {
+      .landing-hero {
+        padding: 40px 0 60px;
+        background: radial-gradient(circle at 50% 20%, rgba(20, 82, 64, 0.6) 0%, rgba(7, 38, 29, 0.98) 60%),
+                    url('images/hero-mobile.avif') center/cover no-repeat;
+      }
+    }
+    .hero-badge-landing {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(229, 169, 59, 0.15);
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 30px 0;
+    }
+    .hero-btn-call {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--accent-gold);
+      color: var(--primary-dark);
+      font-size: 1.15rem;
+      font-weight: 800;
+      padding: 16px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(229, 169, 59, 0.35);
+      transition: all 0.25s ease;
+      flex: 1 1 240px;
+      max-width: 320px;
+    }
+    .hero-btn-call:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(229, 169, 59, 0.45);
+      background: #ffbc42;
+    }
+    .hero-btn-quote {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 16px 26px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      flex: 1 1 220px;
+      max-width: 280px;
+    }
+    .hero-btn-quote:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: #fff;
+    }
+    .trust-bullets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 35px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .trust-bullet-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 600;
+    }
+    .trust-bullet-item svg {
+      width: 20px;
+      height: 20px;
+      color: var(--accent-gold);
+      flex-shrink: 0;
+    }
+    .service-highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin: 40px 0;
+    }
+    .service-highlight-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e5e9f2;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .service-highlight-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+    .service-highlight-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .service-highlight-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .service-highlight-price {
+      display: inline-block;
+      background: #fdf8ed;
+      color: #925805;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 5px 12px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      border: 1px solid #f3e0b5;
+    }
+    .service-highlight-body h3 {
+      font-size: 1.28rem;
+      margin: 0 0 10px;
+      color: #172033;
+    }
+    .service-highlight-body p {
+      font-size: 0.95rem;
+      color: #556277;
+      line-height: 1.55;
+      margin-bottom: 18px;
+      flex: 1;
+    }
+    .service-highlight-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #f0f3f8;
+      padding-top: 16px;
+      margin-top: auto;
+    }
+    .service-highlight-action a {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #074737;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .service-highlight-action a:hover {
+      text-decoration: underline;
+    }
+    .quote-section {
+      background: linear-gradient(135deg, #07261d 0%, #0d4233 100%);
+      color: #fff;
+      padding: 70px 0;
+      position: relative;
+    }
+    .quote-card {
+      background: #ffffff;
+      color: #172033;
+      border-radius: 20px;
+      padding: clamp(24px, 5vw, 45px);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+      max-width: 750px;
+      margin: 0 auto;
+    }
+    .quote-header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .quote-header h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      margin: 0 0 10px;
+      color: #07261d;
+    }
+    .quote-header p {
+      color: #556277;
+      font-size: 1rem;
+      margin: 0;
+    }
+    .mobile-fixed-cta-dual {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+      padding: 10px 14px;
+      z-index: 9999;
+      box-sizing: border-box;
+      gap: 10px;
+    }
+    @media (max-width: 768px) {
+      .mobile-fixed-cta-dual {
+        display: flex;
+      }
+      body {
+        padding-bottom: 70px;
+      }
+    }
+    .mobile-cta-btn-call {
+      flex: 1.2;
+      background: #e5a93b;
+      color: #07261d;
+      font-weight: 800;
+      text-align: center;
+      padding: 13px 8px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .mobile-cta-btn-quote {
+      flex: 1;
+      background: #07261d;
+      color: #ffffff;
+      font-weight: 700;
+      text-align: center;
+      padding: 13px 8px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.92rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Fejléc (Céloldal specifikus, tiszta navigáció) -->
+  <header class="landing-header">
+    <div class="landing-header-inner">
+      <a href="villanyszerelo-budapest.html" class="landing-logo">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:28px;height:28px;color:var(--accent-gold);">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+        </svg>
+        <span>VILLUX</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="#ajanlatkeres" class="btn btn-outline btn-sm d-none-mobile" style="color:#fff;border-color:rgba(255,255,255,0.3);padding:8px 16px;">
+          Ajánlatkérés ✎
+        </a>
+        <a href="tel:+36703068409" class="header-phone-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:18px;height:18px;">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>06 70 306 8409</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Kizáró mikro-blokk (Nem vállalt feladatok szűrése) -->
+  <div class="exclusion-banner">
+    <div class="exclusion-banner-inner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <div>
+        <strong>Fontos tájékoztatás:</strong> Kizárólag épület- és lakásvillamossági feladatokat végzünk (hálózatok, elosztótáblák, szerelvények, készülékbekötések). <em>Nem vállalunk háztartási kisgépek javítását (pl. vasaló, kávéfőző), háztartási nagygépek szerelői javítását és autóvillamosságot.</em>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SZEKCIÓ -->
+    <section class="landing-hero">
+      <div class="container">
+        <div style="max-width: 820px;">
+          <div class="hero-badge-landing" data-dynamic-hero-badge>
+            ⚡ Megbízható Lakossági Villanyszerelő
+          </div>
+          
+          <h1 class="hero-title" style="font-size:clamp(2rem, 5vw, 3.2rem);line-height:1.2;margin-bottom:20px;" data-dynamic-hero-title>
+            Villanyszerelő Budapest – <br>
+            <span style="color:var(--accent-gold);">Lakossági Villanyszerelés</span>
+          </h1>
+
+          <p class="hero-subtitle" style="font-size:clamp(1.05rem, 2.5vw, 1.25rem);color:rgba(255,255,255,0.9);line-height:1.6;margin-bottom:25px;" data-dynamic-hero-subtitle>
+            Villanyszerelési munkák lakásokban és családi házakban: biztosítéktábla csere, indukciós főzőlap és sütő bekötés garanciával, konnektorok cseréje, valamint teljes elektromos hálózat korszerűsítése Budapesten és Pest megyében.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="tel:+36703068409" class="hero-btn-call">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:22px;height:22px;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>Hívás: 06 70 306 8409</span>
+            </a>
+
+            <a href="#ajanlatkeres" class="hero-btn-quote">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="width:20px;height:20px;">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+              </svg>
+              <span>Ajánlatkérés 1 perc alatt</span>
+            </a>
+          </div>
+
+          <!-- Megbízhatósági pontok -->
+          <div class="trust-bullets">
+            <div class="trust-bullet-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Fix, előre egyeztetett árak</span>
+            </div>
+            <div class="trust-bullet-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Számla & írásos garancia</span>
+            </div>
+            <div class="trust-bullet-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Tiszta, kulturált munkavégzés</span>
+            </div>
+            <div class="trust-bullet-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Akár aznapi vagy hétvégi kezdés</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FŐ LAKOSSÁGI SZOLGÁLTATÁSOK -->
+    <section class="section" style="background:#f8fafc;padding:60px 0;">
+      <div class="container">
+        <div class="text-center" style="max-width:750px;margin:0 auto 40px;">
+          <div class="section-badge" style="background:#eaf1ff;color:#175cd3;border-color:#b2ccff;">
+            Szakterületeink
+          </div>
+          <h2 class="section-title" style="font-size:clamp(1.8rem, 4vw, 2.4rem);color:#172033;margin-top:10px;">
+            Milyen villanyszerelési munkákban <br>
+            <span style="color:#074737;">tudunk segíteni?</span>
+          </h2>
+          <p class="section-desc" style="color:#556277;font-size:1.05rem;">
+            Kisebb javításoktól a komplett panellakás vagy családi ház vezetékezésig szakképzett szerelőink garanciával végzik el a munkát Budapest összes kerületében.
+          </p>
+        </div>
+
+        <div class="service-highlight-grid">
+          <!-- 1. Biztosítéktábla csere -->
+          <div class="service-highlight-card">
+            <img src="images/eloszto.avif" alt="Biztosítéktábla csere és korszerűsítés Budapest" loading="lazy">
+            <div class="service-highlight-body">
+              <span class="service-highlight-price">Ár: 45 000 Ft-tól</span>
+              <h3>Biztosítéktábla Csere & Korszerűsítés</h3>
+              <p>Régi olvadóbiztosítékok cseréje modern DIN-sínes kismegszakítókra, életvédelmi FI-relé beépítésével és szabványos elrendezéssel. Megszünteti a túlterhelést és az áramkimaradásokat.</p>
+              <div class="service-highlight-action">
+                <a href="#ajanlatkeres">Ajánlatot kérek rá ↗</a>
+                <a href="tel:+36703068409" style="color:var(--accent-gold);font-weight:800;">Hívás ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Főzőlap & sütő bekötés -->
+          <div class="service-highlight-card">
+            <img src="images/fozolap.avif" alt="Indukciós főzőlap és villanytűzhely garanciális bekötése" loading="lazy">
+            <div class="service-highlight-body">
+              <span class="service-highlight-price">Fix ár: 25 000 Ft-tól</span>
+              <h3>Főzőlap & Villanytűzhely Bekötés</h3>
+              <p>Elektromos és indukciós főzőlapok, beépíthető sütők szakszerű bekötése hivatalos pecséttel a gyártói garancia megőrzéséhez. Igény esetén új, terhelhető tápkábel kiépítése az elosztótól.</p>
+              <div class="service-highlight-action">
+                <a href="#ajanlatkeres">Ajánlatot kérek rá ↗</a>
+                <a href="tel:+36703068409" style="color:var(--accent-gold);font-weight:800;">Hívás ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Konnektor & kapcsoló csere -->
+          <div class="service-highlight-card">
+            <img src="images/panel-work.avif" alt="Konnektorok és kapcsolók cseréje kiépítése" loading="lazy">
+            <div class="service-highlight-body">
+              <span class="service-highlight-price">Ár: 3 500 Ft-tól / db</span>
+              <h3>Konnektorok & Kapcsolók Cseréje</h3>
+              <p>Elöregedett, laza, szikrázó szerelvények cseréje minőségi típusokra (Schneider, Legrand). Új dugaljak létesítése konyhában, nappaliban vagy fürdőszobában falbontással vagy vezetékcsatornában.</p>
+              <div class="service-highlight-action">
+                <a href="#ajanlatkeres">Ajánlatot kérek rá ↗</a>
+                <a href="tel:+36703068409" style="color:var(--accent-gold);font-weight:800;">Hívás ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Villamos hálózat felújítás -->
+          <div class="service-highlight-card">
+            <img src="images/hibajavitas.avif" alt="Panellakás és tégla lakás villamos hálózat felújítása" loading="lazy">
+            <div class="service-highlight-body">
+              <span class="service-highlight-price">Egyedi felmérés alapján</span>
+              <h3>Teljes & Részleges Hálózatfelújítás</h3>
+              <p>Régi alumínium vezetékek cseréje rézvezetékekre panellakásokban és tégla épületekben. Új áramkörök tervezése modern gépekhez (klíma, mosogatógép, indukciós lap) pormentes horonymarással.</p>
+              <div class="service-highlight-action">
+                <a href="#ajanlatkeres">Felmérést kérek ↗</a>
+                <a href="tel:+36703068409" style="color:var(--accent-gold);font-weight:800;">Hívás ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. FI-relé beépítés & hibakeresés -->
+          <div class="service-highlight-card">
+            <img src="images/eloszto.avif" alt="FI-relé érintésvédelmi áramvédő kapcsoló beépítése" loading="lazy">
+            <div class="service-highlight-body">
+              <span class="service-highlight-price">Ár: 30 000 Ft-tól</span>
+              <h3>Életvédelmi FI-Relé Beépítés & Hibakeresés</h3>
+              <p>Áramütés elleni védelem kiépítése minden lakásba. Ha leveri a FI-relét valami, speciális műszerrel bemérjük a hibát és elhárítjuk a szivárgó áramot falbontás nélkül.</p>
+              <div class="service-highlight-action">
+                <a href="#ajanlatkeres">Ajánlatot kérek rá ↗</a>
+                <a href="tel:+36703068409" style="color:var(--accent-gold);font-weight:800;">Hívás ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Bojler bekötés & világítás -->
+          <div class="service-highlight-card">
+            <img src="images/panel-work.avif" alt="Bojler bekötés és lámpatestek felszerelése" loading="lazy">
+            <div class="service-highlight-body">
+              <span class="service-highlight-price">Ár: 12 000 Ft-tól</span>
+              <h3>Bojler Bekötés & Lámpatestek Szerelése</h3>
+              <p>Villanybojler fix elektromos bekötése leválasztó kapcsolóval, csillárok, LED panelek, spotlámpák és rejtett világítások szakszerű felszerelése és bekötése.</p>
+              <div class="service-highlight-action">
+                <a href="#ajanlatkeres">Ajánlatot kérek rá ↗</a>
+                <a href="tel:+36703068409" style="color:var(--accent-gold);font-weight:800;">Hívás ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HOGYAN DOLGOZUNK / FOLYAMAT -->
+    <section class="section" style="padding:60px 0;background:#ffffff;">
+      <div class="container">
+        <div class="text-center" style="max-width:700px;margin:0 auto 40px;">
+          <div class="section-badge" style="background:#f1f5f9;color:#334155;">Munkafolyamat</div>
+          <h2 class="section-title" style="font-size:clamp(1.7rem, 3.8vw, 2.2rem);color:#172033;margin-top:10px;">
+            Egyszerű, tiszta ügyintézés <br>
+            <span style="color:#074737;">3 egyszerű lépésben</span>
+          </h2>
+          <p class="section-desc" style="color:#556277;">
+            Nincs hosszas várakozás, nincsenek utólagos meglepetések.
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:24px;margin-top:30px;">
+          <div style="background:#f8fafc;padding:30px 24px;border-radius:16px;border:1px solid #e2e8f0;text-align:center;">
+            <div style="width:50px;height:50px;background:#074737;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:800;margin:0 auto 16px;">1</div>
+            <h3 style="font-size:1.15rem;color:#172033;margin-bottom:10px;">Kapcsolatfelvétel</h3>
+            <p style="color:#556277;font-size:0.92rem;line-height:1.5;">Hívjon minket telefonon vagy küldje el az ajánlatkérő űrlapot. Néhány perc alatt egyeztetjük a hibát vagy a tervezett munkát.</p>
+          </div>
+
+          <div style="background:#f8fafc;padding:30px 24px;border-radius:16px;border:1px solid #e2e8f0;text-align:center;">
+            <div style="width:50px;height:50px;background:#074737;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:800;margin:0 auto 16px;">2</div>
+            <h3 style="font-size:1.15rem;color:#172033;margin-bottom:10px;">Fix árajánlat</h3>
+            <p style="color:#556277;font-size:0.92rem;line-height:1.5;">Kisebb munkáknál telefonon fix árat adunk, nagyobb felújításoknál helyszíni felmérést végzünk tételes költségvetéssel.</p>
+          </div>
+
+          <div style="background:#f8fafc;padding:30px 24px;border-radius:16px;border:1px solid #e2e8f0;text-align:center;">
+            <div style="width:50px;height:50px;background:#074737;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:800;margin:0 auto 16px;">3</div>
+            <h3 style="font-size:1.15rem;color:#172033;margin-bottom:10px;">Precíz kivitelezés</h3>
+            <p style="color:#556277;font-size:0.92rem;line-height:1.5;">Megbeszélt időben érkezünk, tiszta munkát végzünk, mindent ellenőrzünk műszerrel, és számlát, garanciát adunk.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AJÁNLATKÉRŐ ÉS KAPCSOLAT SZEKCIÓ -->
+    <section class="quote-section" id="ajanlatkeres">
+      <div class="container">
+        <div class="quote-card">
+          <div class="quote-header">
+            <span style="display:inline-block;background:#eaf1ff;color:#175cd3;font-weight:700;font-size:0.82rem;padding:4px 12px;border-radius:50px;margin-bottom:10px;">GYORS VISSZAHÍVÁS</span>
+            <h2>Kérjen Ingyenes Árajánlatot!</h2>
+            <p>Töltse ki az űrlapot, és villanyszerelő szakemberünk 1-2 órán belül visszahívja pontos tájékoztatással.</p>
+          </div>
+
+          <form id="quoteFormLanding" action="https://formsubmit.co/villux024@gmail.com" method="POST">
+            <!-- FormSubmit beállítások -->
+            <input type="hidden" name="_subject" value="⚡ ÚJ VILLUX AJÁNLATKÉRÉS (villanyszerelo-budapest)">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="formName" style="color:#172033;font-weight:600;">Az Ön neve <span style="color:#dc2626;">*</span></label>
+                <input type="text" id="formName" name="name" class="form-control" placeholder="pl. Kovács Péter" required style="border:1px solid #cbd5e1;padding:12px;border-radius:8px;width:100%;">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formPhone" style="color:#172033;font-weight:600;">Telefonszám <span style="color:#dc2626;">*</span></label>
+                <input type="tel" id="formPhone" name="phone" class="form-control" placeholder="+36 30 123 4567" required style="border:1px solid #cbd5e1;padding:12px;border-radius:8px;width:100%;">
+              </div>
+            </div>
+
+            <div class="form-grid-2" style="margin-top:14px;">
+              <div class="form-group">
+                <label class="form-label" for="formAddress" style="color:#172033;font-weight:600;">Település / Kerület</label>
+                <input type="text" id="formAddress" name="address" class="form-control" placeholder="pl. Budapest, XI. kerület" style="border:1px solid #cbd5e1;padding:12px;border-radius:8px;width:100%;">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formService" style="color:#172033;font-weight:600;">Milyen munkáról van szó?</label>
+                <select id="formService" name="service" class="form-control" style="border:1px solid #cbd5e1;padding:12px;border-radius:8px;width:100%;background:#fff;">
+                  <option value="Biztosítéktábla csere">Biztosítéktábla csere / kismegszakítók</option>
+                  <option value="Főzőlap / sütő bekötés">Főzőlap / sütő garanciális bekötés</option>
+                  <option value="Konnektor / kapcsoló csere">Konnektorok, kapcsolók cseréje, bővítése</option>
+                  <option value="FI-relé beépítés / hibakeresés">Életvédelmi FI-relé beépítés / zárlatkeresés</option>
+                  <option value="Teljes hálózatfelújítás">Teljes vagy részleges hálózatfelújítás</option>
+                  <option value="Bojler bekötés / lámpaszerelés">Bojler bekötés / lámpatestek szerelése</option>
+                  <option value="Egyéb lakossági villanyszerelés">Egyéb lakossági villanyszerelés</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top:14px;">
+              <label class="form-label" for="formMessage" style="color:#172033;font-weight:600;">Rövid leírás a feladatról</label>
+              <textarea id="formMessage" name="message" class="form-control" rows="3" placeholder="pl. Családi házban szeretném kicseréltetni a régi táblát és beépíttetni egy FI-relét..." style="border:1px solid #cbd5e1;padding:12px;border-radius:8px;width:100%;"></textarea>
+            </div>
+
+            <div style="margin-top:20px;">
+              <button type="submit" class="btn btn-gold btn-lg" style="width:100%;font-size:1.1rem;font-weight:800;padding:16px;border-radius:10px;cursor:pointer;background:var(--accent-gold);color:#07261d;border:none;">
+                <span>Ajánlatkérés elküldése ↗</span>
+              </button>
+            </div>
+
+            <div style="text-align:center;margin-top:14px;font-size:0.85rem;color:#64748b;">
+              🔒 Az adatait bizalmasan kezeljük, nem küldünk hírlevelet. Sürgős esetben hívjon minket: <a href="tel:+36703068409" style="color:#074737;font-weight:700;">+36 70 306 8409</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- GYIK SZEKCIÓ -->
+    <section class="section" style="padding:60px 0;background:#f8fafc;">
+      <div class="container" style="max-width:850px;">
+        <div class="text-center" style="margin-bottom:40px;">
+          <div class="section-badge">Kérdések & Válaszok</div>
+          <h2 class="section-title" style="font-size:clamp(1.8rem, 3.8vw, 2.3rem);color:#172033;margin-top:10px;">
+            Gyakori kérdések a lakossági <br>
+            <span style="color:#074737;">villanyszerelésről</span>
+          </h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item" style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin-bottom:12px;padding:20px;">
+            <h3 style="font-size:1.1rem;color:#172033;margin:0 0 10px;">Hány napon belül tudtok munkát vállalni?</h3>
+            <p style="color:#556277;margin:0;font-size:0.95rem;line-height:1.6;">Kisebb munkákat (biztosítéktábla csere, főzőlap bekötés, konnektorcsere) általában 24-48 órán belül el tudunk végezni, sürgős esetben akár aznap is. Nagyobb hálózatfelújításoknál előzetes helyszíni felmérést követően egyeztetünk kezdési időpontot.</p>
+          </div>
+
+          <div class="faq-item" style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin-bottom:12px;padding:20px;">
+            <h3 style="font-size:1.1rem;color:#172033;margin:0 0 10px;">Adtok hivatalos számlát és garanciát a munkára?</h3>
+            <p style="color:#556277;margin:0;font-size:0.95rem;line-height:1.6;">Igen, minden elvégzett munkáról hivatalos számlát állítunk ki, és írásos garanciát vállalunk mind a szerelésre, mind az általunk beépített minőségi anyagokra.</p>
+          </div>
+
+          <div class="faq-item" style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin-bottom:12px;padding:20px;">
+            <h3 style="font-size:1.1rem;color:#172033;margin:0 0 10px;">Érvényes lesz a gyártói garancia a bekötött főzőlapra / sütőre?</h3>
+            <p style="color:#556277;margin:0;font-size:0.95rem;line-height:1.6;">Igen! Villanyszerelő szakemberként a beüzemelést követően lepecsételjük és aláírjuk a gyártói jótállási jegyet, így a garancia 100%-ban érvényes marad.</p>
+          </div>
+
+          <div class="faq-item" style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin-bottom:12px;padding:20px;">
+            <h3 style="font-size:1.1rem;color:#172033;margin:0 0 10px;">Milyen területeken dolgoztok?</h3>
+            <p style="color:#556277;margin:0;font-size:0.95rem;line-height:1.6;">Budapest összes kerületében (I-XXIII. kerület), valamint a környező Pest megyei településeken (pl. Budaörs, Érd, Dunakeszi, Szigetszentmiklós, Szentendre, Vecsés stb.).</p>
+          </div>
+        </div>
+
+        <!-- Alsó záró CTA -->
+        <div style="text-align:center;margin-top:40px;background:#07261d;color:#fff;padding:35px 25px;border-radius:16px;">
+          <h3 style="font-size:1.4rem;margin:0 0 10px;color:#fff;">Inkább telefonon egyeztetne?</h3>
+          <p style="color:rgba(255,255,255,0.8);margin-bottom:20px;font-size:1rem;">Hívjon minket közvetlenül, és azonnal megbeszéljük a részleteket!</p>
+          <a href="tel:+36703068409" class="btn btn-gold btn-lg" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;background:var(--accent-gold);color:#07261d;padding:14px 28px;border-radius:50px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:20px;height:20px;">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>Hívás: +36 70 306 8409</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LÁBLÉC -->
+  <footer style="background:#051c15;color:rgba(255,255,255,0.7);padding:30px 0;border-top:1px solid rgba(255,255,255,0.1);font-size:0.88rem;text-align:center;">
+    <div class="container">
+      <p style="margin:0 0 8px;">&copy; 2026 Villux Villanyszerelés. Minden jog fenntartva.</p>
+      <p style="margin:0;color:rgba(255,255,255,0.5);">Közvetlen telefon: <a href="tel:+36703068409" style="color:var(--accent-gold);text-decoration:none;">+36 70 306 8409</a> | E-mail: villux024@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- MOBIL FIX ALSÓ KETTŐS SÁV (HÍVÁS + AJÁNLATKÉRÉS) -->
+  <div class="mobile-fixed-cta-dual">
+    <a href="tel:+36703068409" class="mobile-cta-btn-call">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:18px;height:18px;">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      <span>06 70 306 8409</span>
+    </a>
+    <a href="#ajanlatkeres" class="mobile-cta-btn-quote">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;">
+        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+      </svg>
+      <span>Ajánlatkérés</span>
+    </a>
+  </div>
+
+  <!-- Dinamikus URL paraméter és kulcsszó illesztő script -->
+  <script src="js/landing-param.js"></script>
+
+</body>
+
+</html>

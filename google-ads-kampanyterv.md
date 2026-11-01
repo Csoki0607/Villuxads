@@ -57,7 +57,7 @@ Ez a dokumentum a **Villux (villux.hu)** Google Ads fiókjának teljes, azonnal 
 
 ### B) Másolható Hirdetés: Reszponzív Keresési Hirdetés (RSA - SOS)
 
-* **Végső URL:** `https://www.villux.hu/`
+* **Végső URL (Final URL):** `https://www.villux.hu/sos-villanyszerelo-budapest` *(FIGYELEM: Ez a dedikált SOS landing page biztosítja a legmagasabb Minőségi Mutatót az SOS kulcsszavakra!)*
 * **Megjelenített útvonal 1 (Path 1):** `sos-ugyelet` *(11 kar)*
 * **Megjelenített útvonal 2 (Path 2):** `budapest` *(8 kar)*
 
@@ -158,7 +158,7 @@ Ez a kampány a tervezhető, nagyobb volumenű és lakossági villanyszerelési 
 
 ### B) Másolható Hirdetés: Reszponzív Keresési Hirdetés (RSA - Általános)
 
-* **Végső URL:** `https://www.villux.hu/`
+* **Végső URL (Final URL):** `https://www.villux.hu/villanyszerelo-budapest` *(FIGYELEM: Ez a lakossági villanyszerelő landing page biztosítja a legmagasabb Minőségi Mutatót az általános budapesti kulcsszavakra!)*
 * **Megjelenített útvonal 1:** `villanyszereles` *(15 kar)*
 * **Megjelenített útvonal 2:** `budapest` *(8 kar)*
 
