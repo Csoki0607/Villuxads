@@ -1,13 +1,14 @@
 /**
- * Villux – Intelligens Google Ads Kulcsszó-, Címsor- és Kampányparaméter-kezelő Rendszer v2.1
+ * Villux – Intelligens Google Ads Kulcsszó-, Címsor- és Kampányparaméter-kezelő Rendszer v2.2
  * 
- * 6 Főbb Továbbfejlesztés:
- * 1. Szóhatár-alapú kifejezés- és szótőfelismerés (kizárja a véletlen részleges egyezéseket)
- * 2. Témakód és slug-alias rendszer (pl. ?tema=fozolap-bekotes -> fozolap kategória)
- * 3. Intelligens URL-paraméter összevonás (merge: megőrzi a link meglévő paramétereit is)
- * 4. Robusztus H1 címsor fallback (data-dynamic-hero-title -> .hero-title -> .hero-content h1 -> h1)
- * 5. Biztonságos kerület- és településfelismerés (prioritásos szóhatár, kizárja az 1 / 11, I / XIII tévesztéseket)
- * 6. Az 5 megerősített, szolgáltatás-specifikus garanciális ígéret megtartása
+ * Biztonsági és Architektúrális Finomítások:
+ * 1. Precíz URL útvonal-megőrzés (nem csonkítja a kezdő / jelet, külön kezeli a root, relatív és query-only linkeket)
+ * 2. document.readyState ellenőrzés (azonnali futtatás, ha a DOM már betöltődött)
+ * 3. Célzott H1 keresés hero konténerre szűkítve (megakadályozza az oldal egyéb részein lévő H1-ek felülírását)
+ * 4. Szóhatár-alapú kulcsszó- és szótőfelismerés (\b)
+ * 5. Témakód és slug-alias rendszer (pl. ?tema=fozolap-bekotes -> fozolap)
+ * 6. Biztonságos kerületfelismerés (szóhatárok, kizárja az 1 / 11, I / XIII tévesztéseket)
+ * 7. Az 5 megerősített, szolgáltatás-specifikus szakmai garancia megtartása
  */
 (function() {
   'use strict';
@@ -130,7 +131,7 @@
     }
   };
 
-  // 4. Témakód aliasok és slug-ok (pl. URL sablonok, Google Ads kampány paraméterek feloldása)
+  // 4. Témakód aliasok és slug-ok
   const themeAliases = {
     // Zárlat
     'zarlat': 'zarlat',
@@ -306,7 +307,6 @@
   ];
 
   // 6. Kerület és agglomeráció szótár prioritásos és szóhatár-alapú vizsgálattal
-  // Fontos: a két számjegyű kerületek megelőzik az egy számjegyűeket, hogy a 11/12/13 ne kapjon találatot az 1/2/3-ra!
   const districtDict = [
     // 2 számjegyű kerületek
     { num: 23, regex: /\b(23(\.|\s|ker|kerulet)?|xxiii(\.|\s|ker|kerulet)?|soroksar)\b/i, name: 'XXIII. kerület (Soroksár)', badge: 'XXIII. KERÜLET' },
@@ -347,14 +347,12 @@
   function resolveDistrict(districtParam, textParam) {
     if (districtParam) {
       const cleanD = normalize(districtParam);
-      // Közvetlen numerikus ellenőrzés (1-23)
       const numMatch = cleanD.match(/^(\d{1,2})$/);
       if (numMatch) {
         const n = parseInt(numMatch[1], 10);
         const direct = districtDict.find(d => d.num === n);
         if (direct) return direct;
       }
-      // Regex minta illesztés
       for (const d of districtDict) {
         if (d.regex.test(cleanD)) return d;
       }
@@ -370,8 +368,8 @@
     return null;
   }
 
-  // DOMContentLoaded eseménykezelő
-  document.addEventListener('DOMContentLoaded', function() {
+  // Fő inicializáló rutin
+  function initLandingParams() {
     // 1. LÉPÉS: Paraméterek beolvasása és normalizálása
     const rawTema = getQueryParam('tema');
     const rawKeyword = getQueryParam('keyword') || getQueryParam('kw') || getQueryParam('utm_term') || getQueryParam('q');
@@ -410,14 +408,16 @@
     // C) Kerület beazonosítása (szóhatár- és számbiztos módszerrel)
     const matchedDistrict = resolveDistrict(rawDistrict, rawKeyword);
 
-    // 2. LÉPÉS: DOM Frissítés (Robusztus szelektorokkal és szinergiával)
+    // 2. LÉPÉS: DOM Frissítés (Célzott szelektorokkal, hero-ra korlátozva)
     const eyebrowEl = document.querySelector('.hero-eyebrow, [data-dynamic-eyebrow]');
-    // H1 Fallback: attribútum -> hero-title -> hero-content h1 -> h1
-    const titleEl = document.querySelector('[data-dynamic-hero-title], .hero-title, .hero-content h1, h1');
+    
+    // Célzott H1 szelektor: először az explicit attribútum, majd .hero-title, majd a hero szekció h1 eleme.
+    // Szándékosan NEM sima 'h1', hogy ne írja felül az oldal más részein (fejléc logó, tartalom) lévő h1-eket!
+    const titleEl = document.querySelector('[data-dynamic-hero-title], .hero-title, .hero-section h1, .hero-content h1');
     const leadEl = document.querySelector('.hero-desc-lead, [data-dynamic-lead]');
     const formSubjectEl = document.getElementById('formSubject');
 
-    // A) Jelvény (Eyebrow): Téma és Kerület elegáns szinergiája
+    // A) Jelvény (Eyebrow): Téma és Kerület szinergiája
     if (eyebrowEl && (matchedCategory || matchedDistrict)) {
       let badgeHtml = '<span class="pulse-dot"></span> ';
       if (matchedCategory && matchedDistrict) {
@@ -447,7 +447,7 @@
       formSubjectEl.value = `⚡ Villux Megkeresés | ${topicPart}${districtPart}`;
     }
 
-    // 3. LÉPÉS: Intelligens URL-paraméter összevonás és öröklés belső linkeknél
+    // 3. LÉPÉS: Intelligens és biztonságos belső link-öröklés (Útvonal-megőrző logika)
     if (window.location.search) {
       try {
         const currentParams = new URLSearchParams(window.location.search);
@@ -457,7 +457,7 @@
           const rawHref = link.getAttribute('href');
           if (!rawHref) return;
 
-          // Kizárjuk a külső linkeket, telefon/email és pusztán oldalon belüli horgonyokat
+          // Kizárjuk a kizárólag oldalon belüli horgonyokat, telefon/email és JS linkeket
           if (
             rawHref.startsWith('#') ||
             rawHref.startsWith('tel:') ||
@@ -467,35 +467,59 @@
             return;
           }
 
-          // Cél URL feloldása a jelenlegi dokumentum báziscíméhez képest
-          try {
-            const resolvedUrl = new URL(rawHref, window.location.href);
-
-            // Csak belső (azonos domain) linkeket frissítünk
-            if (resolvedUrl.origin === window.location.origin) {
-              // Összevonjuk a paramétereket: a jelenlegi kampányparamétereket átadjuk, ha még nincs beállítva
-              currentParams.forEach(function(val, key) {
-                if (!resolvedUrl.searchParams.has(key)) {
-                  resolvedUrl.searchParams.set(key, val);
-                }
-              });
-
-              // Relatív vagy abszolút útvonal visszaállítása horgony (#) megőrzésével
-              const isOriginallyRelative = !rawHref.includes('://');
-              if (isOriginallyRelative) {
-                const path = resolvedUrl.pathname.replace(/^\//, '');
-                link.setAttribute('href', path + resolvedUrl.search + resolvedUrl.hash);
-              } else {
-                link.setAttribute('href', resolvedUrl.href);
+          // Külső linkek ellenőrzése: ha teljes URL van protokollal, csak azonos origint módosítunk
+          if (rawHref.includes('://')) {
+            try {
+              const fullUrl = new URL(rawHref);
+              if (fullUrl.origin !== window.location.origin) {
+                return; // Külső link, nem módosítjuk
               }
+            } catch (e) {
+              return;
             }
-          } catch (urlErr) {
-            // Nem szabványos link esetén békén hagyjuk
           }
+
+          // Útvonal-megőrző bontás: leválasztjuk a horgonyt (#) és a meglévő paramétereket (?)
+          let base = rawHref;
+          let hashPart = '';
+          let existingSearchPart = '';
+
+          const hashIdx = base.indexOf('#');
+          if (hashIdx !== -1) {
+            hashPart = base.substring(hashIdx);
+            base = base.substring(0, hashIdx);
+          }
+
+          const qIdx = base.indexOf('?');
+          if (qIdx !== -1) {
+            existingSearchPart = base.substring(qIdx + 1);
+            base = base.substring(0, qIdx);
+          }
+
+          // Összefésüljük a cél URL meglévő paramétereit a bejövő kampányparaméterekkel
+          const linkParams = new URLSearchParams(existingSearchPart);
+          currentParams.forEach(function(val, key) {
+            if (!linkParams.has(key)) {
+              linkParams.set(key, val);
+            }
+          });
+
+          const newQueryString = linkParams.toString();
+          const finalHref = base + (newQueryString ? '?' + newQueryString : '') + hashPart;
+
+          link.setAttribute('href', finalHref);
         });
       } catch (err) {
         console.warn('Villux landing params link inheritance error:', err);
       }
     }
-  });
+  }
+
+  // 4. LÉPÉS: Biztonságos indítás document.readyState ellenőrzéssel
+  // Ha a DOM még töltődik, megvárjuk a DOMContentLoaded-et, ellenkező esetben azonnal futtatjuk
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLandingParams);
+  } else {
+    initLandingParams();
+  }
 })();
