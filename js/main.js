@@ -418,20 +418,33 @@ function initQuoteForm() {
 
       const result = await response.json();
 
-      // Show Confirmation Modal
-      if (modal) {
-        modal.classList.add('open');
+      if (result.success === 'true' || result.success === true) {
+        // Show Confirmation Modal
+        if (modal) {
+          modal.classList.add('open');
+        } else {
+          showToast('Köszönjük! Ajánlatkérését sikeresen továbbítottuk.');
+        }
+        reportGoogleAdsConversion('form_submit', {
+          label: `Ajánlatkérés: ${service || 'Általános'} (${isUrgent})`
+        });
+        form.reset();
       } else {
-        showToast('Köszönjük! Ajánlatkérését sikeresen továbbítottuk.');
+        console.warn('FormSubmit elutasította a küldést:', result);
+        if (window.location.protocol === 'file:') {
+          alert('Fontos tesztelési információ:\n\nA FormSubmit (e-mail továbbító szolgáltató) biztonsági okokból blokkolja a közvetlenül merevlemezről (fájlként: file:///) megnyitott oldalakat.\n\nA teszteléshez indítsa el a helyi szervert (node server.js -> http://localhost:3000), vagy töltse fel a weboldalt az éles tárhelyre (villux.hu). Ott az e-mail küldés azonnal és hibátlanul működik!');
+        } else {
+          // Ha webszerveren fut, de valamiért az AJAX nem ment át, hagyományos POST küldés
+          form.submit();
+        }
       }
-      reportGoogleAdsConversion('form_submit', {
-        label: `Ajánlatkérés: ${service || 'Általános'} (${isUrgent})`
-      });
-      form.reset();
     } catch (err) {
       console.warn('AJAX submit warning, fallback to direct form submission:', err);
-      // Fallback: standard submit if network block
-      form.submit();
+      if (window.location.protocol !== 'file:') {
+        form.submit();
+      } else {
+        alert('Közvetlen fájlként (file:///) megnyitva a böngésző nem engedélyezi az e-mail küldést. Kérjük tesztelje webszerveren keresztül (http://localhost:3000)!');
+      }
     } finally {
       if (submitBtn) {
         submitBtn.disabled = false;
