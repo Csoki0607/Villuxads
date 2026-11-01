@@ -2980,14 +2980,18 @@ textarea.form-control {
     top: 60px;
     left: 0;
     right: 0;
+    bottom: auto;
     background: #062219;
     flex-direction: column;
-    padding: 24px;
-    gap: 16px;
+    padding: 16px 20px 20px;
+    gap: 4px;
     border-bottom: 1px solid var(--border-subtle);
     transform: translateY(-150%);
     transition: transform var(--transition-normal);
     box-shadow: var(--shadow-lg);
+    max-height: calc(100dvh - 60px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-menu.open {
@@ -2996,6 +3000,12 @@ textarea.form-control {
 
   .nav-item-dropdown {
     width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding-bottom: 4px;
+  }
+
+  .nav-item-dropdown:last-child {
+    border-bottom: none;
   }
 
   .nav-item-dropdown .dropdown-toggle {
@@ -3003,25 +3013,33 @@ textarea.form-control {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 44px;
+    padding: 8px 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
   }
 
   .nav-menu .dropdown-menu {
     position: static;
     transform: none;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.28);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: none;
-    border-radius: 8px;
-    margin-top: 8px;
-    padding: 6px;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 4px;
     min-width: 100%;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
-    transition: max-height 0.35s ease, opacity 0.25s ease, visibility 0.25s ease;
+    pointer-events: none;
+    transition: max-height 0.3s ease, opacity 0.25s ease, visibility 0.25s ease;
   }
 
   .nav-menu .dropdown-menu::before,
@@ -3030,7 +3048,7 @@ textarea.form-control {
   }
 
   .nav-item-dropdown.mobile-open .dropdown-menu {
-    max-height: 550px;
+    max-height: 600px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -3038,6 +3056,13 @@ textarea.form-control {
 
   .nav-item-dropdown.mobile-open .dropdown-chevron {
     transform: rotate(180deg);
+  }
+
+  .nav-menu .dropdown-link {
+    min-height: 44px;
+    padding: 10px 14px;
+    white-space: normal;
+    line-height: 1.35;
   }
 
   .nav-actions .nav-phone-btn {

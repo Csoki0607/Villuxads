@@ -19,35 +19,58 @@ document.addEventListener('DOMContentLoaded', () => {
 /* --------------------------------------------------------------------------
    1. MOBILE & DROPDOWN NAVIGATION
    -------------------------------------------------------------------------- */
+
+// Megbízható mobildetektálás: a CSS 768px breakpointjával szinkronban,
+// de matchMedia-val, hogy a touch/pinch-zoom ne vezesse félre az innerWidth-et
+function isMobileNav() {
+  return window.matchMedia('(max-width: 768px)').matches;
+}
+
 function initMobileNav() {
   const toggleBtn = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
   if (!toggleBtn || !navMenu) return;
 
-  toggleBtn.addEventListener('click', () => {
+  // Hamburger gomb: megnyitja/bezárja a mobil menüt
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     navMenu.classList.toggle('open');
     const isOpen = navMenu.classList.contains('open');
-    toggleBtn.setAttribute('aria-expanded', isOpen);
+    toggleBtn.setAttribute('aria-expanded', String(isOpen));
   });
 
-  // Services dropdown handling (desktop hover/focus + mobile toggle)
+  // Szolgáltatások lenyíló kezelése
   const dropdownItems = navMenu.querySelectorAll('.nav-item-dropdown');
   dropdownItems.forEach(dropdown => {
     const toggle = dropdown.querySelector('.dropdown-toggle');
     if (!toggle) return;
 
+    // Mobilon a click (és touch -> click) megnyitja az almenüt, nem navigál
     toggle.addEventListener('click', (e) => {
-      // On mobile / small screens, tapping the toggle expands the dropdown
-      if (window.innerWidth <= 768) {
+      if (isMobileNav()) {
         e.preventDefault();
+        e.stopPropagation();
+
+        // Zárjuk be a többi nyitott almenüt (ha esetleg több lenne)
+        dropdownItems.forEach(d => {
+          if (d !== dropdown) d.classList.remove('mobile-open');
+        });
+
         dropdown.classList.toggle('mobile-open');
         const isOpen = dropdown.classList.contains('mobile-open');
-        toggle.setAttribute('aria-expanded', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
       }
     });
+
+    // iOS Safari kompatibilitás: a touchstart-ra is megakadályozzuk a buborékozást
+    toggle.addEventListener('touchstart', (e) => {
+      if (isMobileNav()) {
+        e.stopPropagation();
+      }
+    }, { passive: true });
   });
 
-  // Close when clicking any regular nav link or dropdown sub-link
+  // Bezárás normál menüpont vagy almenü link kattintáskor
   navMenu.querySelectorAll('.nav-link:not(.dropdown-toggle), .dropdown-link').forEach(link => {
     link.addEventListener('click', () => {
       navMenu.classList.remove('open');
@@ -56,7 +79,7 @@ function initMobileNav() {
     });
   });
 
-  // Close mobile nav / dropdown when clicking outside
+  // Bezárás külső kattintásra (csak mobilon lényeges, de desktopon is biztonságos)
   document.addEventListener('click', (e) => {
     if (!navMenu.contains(e.target) && !toggleBtn.contains(e.target)) {
       navMenu.classList.remove('open');
