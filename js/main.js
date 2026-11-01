@@ -303,8 +303,9 @@ function initPriceCalculator() {
       if (messageField) {
         messageField.value = summaryText;
       }
-      if (serviceSelect) {
-        serviceSelect.value = 'hibajavitas';
+      // Keep the current or preselected service, or ensure something valid is selected
+      if (serviceSelect && !serviceSelect.value) {
+        serviceSelect.selectedIndex = 0;
       }
 
       showToast('Kalkuláció átmásolva az űrlaphoz!');
@@ -389,6 +390,9 @@ function initQuoteForm() {
       `;
     }
 
+    const subjectInput = form.querySelector('[name="_subject"]');
+    const baseSubject = subjectInput && subjectInput.value ? subjectInput.value : '⚡ Új Villux Megkeresés';
+
     const payload = {
       "Ügyfél_Neve": name,
       "Telefonszám": phone,
@@ -397,7 +401,7 @@ function initQuoteForm() {
       "Szolgáltatás_típusa": service,
       "Sürgős_visszahívás": isUrgent,
       "Hiba_Leírása_vagy_Kalkuláció": message || 'Nem adott meg külön hiba leírást',
-      "_subject": `⚡ Új Villux Megkeresés: ${name} (${phone})`,
+      "_subject": `${baseSubject}: ${name} (${phone})`,
       "_template": "table",
       "_captcha": "false"
     };
