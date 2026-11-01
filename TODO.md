@@ -11,8 +11,8 @@ Ez a dokumentum rögzíti a jóváhagyott fejlesztési feladatokat a `villux_goo
   - Közös stílusok és landing-specifikus komponensek felkészítése (`css/style.css`, `js/main.js`).
 - [x] **1.2. Dinamikus címsor / URL paraméter illesztő script (`landing-param.js`)**
   - `?tema=...` és `?utm_term=...` paraméterek lekezelése a Hero címsorok/kiemelések finomhangolására.
-- [x] **1.3. „Kizáró mikro-blokk” komponens**
-  - Információs sáv: miket NEM vállal a cég (pl. kisgépek, autóelektronika, 112-es vészhelyzeti figyelmeztetés).
+- [x] **1.3. Kizáró tájékoztató kezelése**
+  - A hajtás feletti képet és struktúrát széttoló felső sáv eltávolítva; a tájékoztatás diszkréten a láblécben / űrlapnál maradt, így a Hero szekció azonnal tisztán, zavaró feliratok nélkül jelenik meg.
 
 ---
 
