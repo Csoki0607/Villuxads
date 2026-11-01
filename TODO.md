@@ -48,7 +48,11 @@ Ez a dokumentum rögzíti a jóváhagyott fejlesztési feladatokat a `villux_goo
   - Indukciós főzőlap és elektromos sütő garanciális bekötési céloldal (`fozolap-bekotes.html`).
 - [x] **4.3. Villamos hálózat felújítás (`/villamos-halozat-felujitas`)**
   - Panellakás és tégla lakás komplett/részleges vezetékezési céloldal (`villamos-halozat-felujitas.html`).
-- [ ] **4.4. Különleges szolgáltatási oldalak** *(Jóváhagyást követően: VBF, Lakásvillamosság, LED, EV-töltő)*
+- [x] **4.4. Különleges szolgáltatási oldalak**
+  - **VBF & Szabványosítás:** `villamos-szabvanyositas-vbf.html` (`/villamos-szabvanyositas-vbf`)
+  - **Lakásvillamosság & Felújítás:** `lakasvillanyszereles-epuletvillamossag.html` (`/lakasvillanyszereles-epuletvillamossag`)
+  - **LED-világítás tervezés:** `led-vilagitas-tervezes-kivitelezes.html` (`/led-vilagitas-tervezes-kivitelezes`)
+  - **Elektromosautó-töltő kiépítés:** `elektromos-auto-tolto-kiepites.html` (`/elektromos-auto-tolto-kiepites`)
 
 ---
 
