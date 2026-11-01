@@ -20,12 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
    1. MOBILE & DROPDOWN NAVIGATION
    -------------------------------------------------------------------------- */
 
-// Megbízható mobildetektálás: a CSS 768px breakpointjával szinkronban,
-// de matchMedia-val, hogy a touch/pinch-zoom ne vezesse félre az innerWidth-et
-function isMobileNav() {
-  return window.matchMedia('(max-width: 768px)').matches;
-}
-
 function initMobileNav() {
   const toggleBtn = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
@@ -45,29 +39,18 @@ function initMobileNav() {
     const toggle = dropdown.querySelector('.dropdown-toggle');
     if (!toggle) return;
 
-    // Mobilon a click (és touch -> click) megnyitja az almenüt, nem navigál
+    // Minden kattintásra / érintésre nyitja/csukja az almenüt a mobil nézetben
     toggle.addEventListener('click', (e) => {
-      if (isMobileNav()) {
+      const isMobile = navMenu.classList.contains('open') || window.innerWidth <= 992;
+      if (isMobile) {
         e.preventDefault();
         e.stopPropagation();
-
-        // Zárjuk be a többi nyitott almenüt (ha esetleg több lenne)
-        dropdownItems.forEach(d => {
-          if (d !== dropdown) d.classList.remove('mobile-open');
-        });
 
         dropdown.classList.toggle('mobile-open');
         const isOpen = dropdown.classList.contains('mobile-open');
         toggle.setAttribute('aria-expanded', String(isOpen));
       }
     });
-
-    // iOS Safari kompatibilitás: a touchstart-ra is megakadályozzuk a buborékozást
-    toggle.addEventListener('touchstart', (e) => {
-      if (isMobileNav()) {
-        e.stopPropagation();
-      }
-    }, { passive: true });
   });
 
   // Bezárás normál menüpont vagy almenü link kattintáskor
@@ -537,8 +520,9 @@ function showToast(message) {
    8. SMOOTH SCROLLING FOR ALL ANCHOR LINKS
    -------------------------------------------------------------------------- */
 function initSmoothScroll() {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#"]:not(.dropdown-toggle)').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
+      if (this.classList.contains('dropdown-toggle')) return;
       const targetId = this.getAttribute('href');
       if (targetId === '#' || targetId === '') return;
 
