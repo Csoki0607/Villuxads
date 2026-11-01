@@ -340,7 +340,13 @@
     { num: 102, regex: /\bdunakeszi\b/i, name: 'Dunakeszi és környéke', badge: 'DUNAKESZI' },
     { num: 103, regex: /\bszentendre\b/i, name: 'Szentendre és környéke', badge: 'SZENTENDRE' },
     { num: 104, regex: /\berd\b/i, name: 'Érd és környéke', badge: 'ÉRD' },
-    { num: 105, regex: /\bgodollo\b/i, name: 'Gödöllő és környéke', badge: 'GÖDÖLLŐ' }
+    { num: 105, regex: /\bgodollo\b/i, name: 'Gödöllő és környéke', badge: 'GÖDÖLLŐ' },
+    { num: 106, regex: /\bdunaharaszti\b/i, name: 'Dunaharaszti és környéke', badge: 'DUNAHARASZTI' },
+    { num: 107, regex: /\bszigetszentmiklos\b/i, name: 'Szigetszentmiklós és környéke', badge: 'SZIGETSZENTMIKLÓS' },
+    { num: 108, regex: /\bgyal\b/i, name: 'Gyál és környéke', badge: 'GYÁL' },
+    { num: 109, regex: /\bvecses\b/i, name: 'Vecsés és környéke', badge: 'VECSÉS' },
+    { num: 110, regex: /\bfot\b/i, name: 'Fót és környéke', badge: 'FÓT' },
+    { num: 111, regex: /\bvac\b/i, name: 'Vác és környéke', badge: 'VÁC' }
   ];
 
   // Kerület feloldása dedikált paraméterből vagy keresőkifejezésből szóhatárokkal
