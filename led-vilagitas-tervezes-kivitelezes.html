@@ -149,13 +149,14 @@
   <header class="main-header" id="mainHeader">
     <div class="container navbar">
       <a href="index.html" class="logo" aria-label="Villux Kezdőlap">
-        <div class="logo-badge">
-          <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
-        </div>
+        <svg class="logo-icon" viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#073123"
+            d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+          <path fill="#073123" fill-opacity=".85"
+            d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+          <path fill="#073123"
+            d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+        </svg>
         <div class="logo-text">
           VILLUX
         </div>
@@ -165,25 +166,35 @@
         <ul class="nav-menu" id="navMenu">
           <li><a href="index.html" class="nav-link">Főoldal</a></li>
           <li><a href="#miert-a-villux" class="nav-link">Miért a Villux?</a></li>
-                      <li class="nav-item-dropdown">
-              <a href="#szolgaltatasok" class="nav-link dropdown-toggle" id="servicesDropdownToggle" aria-haspopup="true" aria-expanded="false">
-                Szolgáltatások
-                <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </a>
-              <ul class="dropdown-menu" aria-label="Szolgáltatások almenü">
-                <li><a href="sos-villanyszerelo-budapest.html" class="dropdown-link"><span class="dropdown-icon">🚨</span> SOS Villanyszerelő (0–24)</a></li>
-                <li><a href="villanyszerelo-budapest.html" class="dropdown-link"><span class="dropdown-icon">⚡</span> Villanyszerelő Budapest</a></li>
-                <li><a href="biztositektabla-szereles.html" class="dropdown-link"><span class="dropdown-icon">🎛️</span> Biztosítéktábla Szerelés</a></li>
-                <li><a href="fozolap-bekotes.html" class="dropdown-link"><span class="dropdown-icon">🍳</span> Főzőlap & Sütő Bekötés</a></li>
-                <li><a href="villamos-halozat-felujitas.html" class="dropdown-link"><span class="dropdown-icon">🔌</span> Villamos Hálózat Felújítás</a></li>
-                <li><a href="villamos-szabvanyositas-vbf.html" class="dropdown-link"><span class="dropdown-icon">📋</span> Villamos Szabványosítás & VBF</a></li>
-                <li><a href="lakasvillanyszereles-epuletvillamossag.html" class="dropdown-link"><span class="dropdown-icon">🏠</span> Lakásvillanyszerelés</a></li>
-                <li><a href="led-vilagitas-tervezes-kivitelezes.html" class="dropdown-link active"><span class="dropdown-icon">💡</span> LED Világítástechnika</a></li>
-                <li><a href="elektromos-auto-tolto-kiepites.html" class="dropdown-link"><span class="dropdown-icon">🚗</span> Elektromos Autó Töltő</a></li>
-              </ul>
-            </li>
+          <li class="nav-item-dropdown">
+            <a href="#szolgaltatasok" class="nav-link dropdown-toggle" id="servicesDropdownToggle" aria-haspopup="true"
+              aria-expanded="false">
+              Szolgáltatások
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu" aria-label="Szolgáltatások almenü">
+              <li><a href="sos-villanyszerelo-budapest.html" class="dropdown-link"><span class="dropdown-icon">🚨</span>
+                  SOS Villanyszerelő (0–24)</a></li>
+              <li><a href="villanyszerelo-budapest.html" class="dropdown-link"><span class="dropdown-icon">⚡</span>
+                  Villanyszerelő Budapest</a></li>
+              <li><a href="biztositektabla-szereles.html" class="dropdown-link"><span class="dropdown-icon">🎛️</span>
+                  Biztosítéktábla Szerelés</a></li>
+              <li><a href="fozolap-bekotes.html" class="dropdown-link"><span class="dropdown-icon">🍳</span> Főzőlap &
+                  Sütő Bekötés</a></li>
+              <li><a href="villamos-halozat-felujitas.html" class="dropdown-link"><span class="dropdown-icon">🔌</span>
+                  Villamos Hálózat Felújítás</a></li>
+              <li><a href="villamos-szabvanyositas-vbf.html" class="dropdown-link"><span class="dropdown-icon">📋</span>
+                  Villamos Szabványosítás & VBF</a></li>
+              <li><a href="lakasvillanyszereles-epuletvillamossag.html" class="dropdown-link"><span
+                    class="dropdown-icon">🏠</span> Lakásvillanyszerelés</a></li>
+              <li><a href="led-vilagitas-tervezes-kivitelezes.html" class="dropdown-link active"><span
+                    class="dropdown-icon">💡</span> LED Világítástechnika</a></li>
+              <li><a href="elektromos-auto-tolto-kiepites.html" class="dropdown-link"><span
+                    class="dropdown-icon">🚗</span> Elektromos Autó Töltő</a></li>
+            </ul>
+          </li>
           <li><a href="#arak" class="nav-link">Áraink</a></li>
           <li><a href="#kalkulator" class="nav-link">Árkalkulátor</a></li>
           <li><a href="#referenciak" class="nav-link">Referenciák</a></li>
@@ -231,8 +242,8 @@
 
         <p class="hero-description">
           <span class="hero-desc-lead">Sürgősségi és ügyeletes villanyszerelő Budapesten és Pest megyében.</span>
-          Zárlat, áramkimaradás, füstölő konnektor vagy leverődő biztosíték esetén ügyeletes villanyszerelő csapatunk 
-          akár <strong>30–60 percen belül</strong> a helyszínre érkezik. Éjjel-nappal, hétvégén és ünnepnapokon is 
+          Zárlat, áramkimaradás, füstölő konnektor vagy leverődő biztosíték esetén ügyeletes villanyszerelő csapatunk
+          akár <strong>30–60 percen belül</strong> a helyszínre érkezik. Éjjel-nappal, hétvégén és ünnepnapokon is
           azonnal hívható gyorsszolgálat, fix árakkal és 100% garanciával.
         </p>
 
@@ -304,10 +315,13 @@
         <div class="hero-yellow-trust-badge">
           <div class="badge-lightning-icon">
             <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+              <path fill="currentColor"
+                d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+              <path fill="currentColor" fill-opacity=".7"
+                d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+              <path fill="currentColor"
+                d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+            </svg>
           </div>
           <div class="badge-text-wrap">
             <div class="badge-title">⚡ 0–24 SOS GYORSSZOLGÁLAT</div>
@@ -334,14 +348,18 @@
       <div class="concept-card concept-card-yellow mobile-card">
         <div class="card-yellow-badge-tag">⚡ 0–24 ÜGYELETES VILLANYSZERELŐ</div>
         <div class="card-yellow-title">0–24 SOS Villanyszerelő & Ügyelet Budapest</div>
-        <p class="card-yellow-desc">Azonnali és sürgősségi hibaelhárítás, zárlatkeresés akár 30-60 percen belül hétvégén és ünnepnapokon is.</p>
+        <p class="card-yellow-desc">Azonnali és sürgősségi hibaelhárítás, zárlatkeresés akár 30-60 percen belül hétvégén
+          és ünnepnapokon is.</p>
         <div class="card-yellow-footer">
           <div class="circle-lightning-icon">
             <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+              <path fill="currentColor"
+                d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+              <path fill="currentColor" fill-opacity=".7"
+                d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+              <path fill="currentColor"
+                d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+            </svg>
           </div>
           <div class="card-yellow-stat">
             <span class="card-stat-number">0–24</span>
@@ -545,23 +563,34 @@
 
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/lighting.avif" alt="Mennyezeti Rejtett Világítás" loading="lazy" decoding="async" width="600" height="400">
-            
+            <img src="images/lighting.avif" alt="Mennyezeti Rejtett Világítás" loading="lazy" decoding="async"
+              width="600" height="400">
+
             <div class="service-icon-floating">
               <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                <path fill="currentColor"
+                  d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                <path fill="currentColor" fill-opacity=".7"
+                  d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                <path fill="currentColor"
+                  d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+              </svg>
             </div>
           </div>
           <div class="service-content">
             <h3 class="service-title">Mennyezeti Rejtett Világítás</h3>
-            <p class="service-desc">Gipszkarton szigetekbe és stukkókba rejtett indirekt LED fénysávok kiépítése egyenletes, vakításmentes fénnyel.</p>
+            <p class="service-desc">Gipszkarton szigetekbe és stukkókba rejtett indirekt LED fénysávok kiépítése
+              egyenletes, vakításmentes fénnyel.</p>
             <ul class="service-features-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Pontmentes COB / SMD LED szalagok</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Alumínium hűtőprofilos tartós beépítés</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Dimmelhető melegfehér / CCT fények</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Pontmentes COB / SMD LED szalagok</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Alumínium hűtőprofilos tartós beépítés</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Dimmelhető melegfehér / CCT fények</li>
             </ul>
             <div class="service-card-footer">
               <div class="service-price-from">
@@ -574,23 +603,34 @@
 
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/panel-work.avif" alt="Konyhapult Munkapult Világítás" loading="lazy" decoding="async" width="600" height="400">
-            
+            <img src="images/panel-work.avif" alt="Konyhapult Munkapult Világítás" loading="lazy" decoding="async"
+              width="600" height="400">
+
             <div class="service-icon-floating">
               <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                <path fill="currentColor"
+                  d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                <path fill="currentColor" fill-opacity=".7"
+                  d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                <path fill="currentColor"
+                  d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+              </svg>
             </div>
           </div>
           <div class="service-content">
             <h3 class="service-title">Konyhapult Munkapult Világítás</h3>
-            <p class="service-desc">Felső szekrény aljára mart vagy felragasztott eloxált aluprofilos LED csík, érintésmentes kézlegyintős kapcsolóval.</p>
+            <p class="service-desc">Felső szekrény aljára mart vagy felragasztott eloxált aluprofilos LED csík,
+              érintésmentes kézlegyintős kapcsolóval.</p>
             <ul class="service-features-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Erős, árnyékmentes munkalap megvilágítás</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Érintésmentes higiénikus vezérlés</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Páraálló opál bura</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Erős, árnyékmentes munkalap megvilágítás</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Érintésmentes higiénikus vezérlés</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Páraálló opál bura</li>
             </ul>
             <div class="service-card-footer">
               <div class="service-price-from">
@@ -603,23 +643,34 @@
 
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/hero-img-1.avif" alt="Okosvezérlés & Fényerőszabályzás" loading="lazy" decoding="async" width="600" height="400">
-            
+            <img src="images/hero-img-1.avif" alt="Okosvezérlés & Fényerőszabályzás" loading="lazy" decoding="async"
+              width="600" height="400">
+
             <div class="service-icon-floating">
               <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                <path fill="currentColor"
+                  d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                <path fill="currentColor" fill-opacity=".7"
+                  d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                <path fill="currentColor"
+                  d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+              </svg>
             </div>
           </div>
           <div class="service-content">
             <h3 class="service-title">Okosvezérlés & Fényerőszabályzás</h3>
-            <p class="service-desc">Fali forgatógombos dimmerek, többzónás távirányítók és okosotthonos (WiFi / Zigbee) vezérlők beüzemelése.</p>
+            <p class="service-desc">Fali forgatógombos dimmerek, többzónás távirányítók és okosotthonos (WiFi / Zigbee)
+              vezérlők beüzemelése.</p>
             <ul class="service-features-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Fokozatmentes fényerőszabályzás</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Színhőmérséklet (CCT) állítás</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Okostelefonos és hangvezérlés</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Fokozatmentes fényerőszabályzás</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Színhőmérséklet (CCT) állítás</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Okostelefonos és hangvezérlés</li>
             </ul>
             <div class="service-card-footer">
               <div class="service-price-from">
@@ -659,14 +710,17 @@
             <span class="pricing-badge-count">5 tétel</span>
           </div>
           <ul class="price-items-list">
-            
+
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Konyhapult LED munkapult világítás komplett szerelése
               </span>
               <span class="price-item-val">25 000 Ft</span>
@@ -674,10 +728,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Rejtett mennyezeti LED profil szerelés (méterenként)
               </span>
               <span class="price-item-val">4 500 Ft / m</span>
@@ -685,10 +742,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Lépcsőfok / gardrób LED profil szerelés
               </span>
               <span class="price-item-val">5 500 Ft / m</span>
@@ -696,10 +756,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Ipari MeanWell tápegység beépítése és bekötése
               </span>
               <span class="price-item-val">12 000 Ft</span>
@@ -707,10 +770,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Fali forgatógombos LED dimmer beépítése
               </span>
               <span class="price-item-val">15 000 Ft</span>
@@ -732,14 +798,17 @@
             <span class="pricing-badge-count">5 tétel</span>
           </div>
           <ul class="price-items-list">
-            
+
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Mennyezeti spotlámpa / LED panel felszerelése
               </span>
               <span class="price-item-val">7 000 Ft / db</span>
@@ -747,10 +816,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Csillár / függesztett design lámpa szerelése
               </span>
               <span class="price-item-val">14 000 Ft / db</span>
@@ -758,10 +830,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Mágneses sínrendszer tápellátásának kiépítése
               </span>
               <span class="price-item-val">28 000 Ft</span>
@@ -769,10 +844,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Fali karos olvasólámpa felszerelése
               </span>
               <span class="price-item-val">8 500 Ft / db</span>
@@ -780,10 +858,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Mozgásérzékelős alkonykapcsoló bekötése
               </span>
               <span class="price-item-val">15 000 Ft</span>
@@ -833,7 +914,8 @@
               <span class="calc-label">Főbb fix munkadíjas tételek</span>
               <div class="calc-checkboxes">
 
-                <div class="calc-option-card" data-name="Konyhapult LED munkapult világítás komplett szerelése" data-price="25000">
+                <div class="calc-option-card" data-name="Konyhapult LED munkapult világítás komplett szerelése"
+                  data-price="25000">
                   <div class="calc-opt-info">
                     <span class="calc-opt-name">Konyhapult LED munkapult világítás komplett szerelése</span>
                     <span class="calc-opt-price">25 000 Ft</span>
@@ -857,7 +939,8 @@
                   </div>
                 </div>
 
-                <div class="calc-option-card" data-name="Fali LED dimmer / fényerőszabályzó bekötése" data-price="15000">
+                <div class="calc-option-card" data-name="Fali LED dimmer / fényerőszabályzó bekötése"
+                  data-price="15000">
                   <div class="calc-opt-info">
                     <span class="calc-opt-name">Fali LED dimmer / fényerőszabályzó bekötése</span>
                     <span class="calc-opt-price">15 000 Ft</span>
@@ -869,7 +952,8 @@
                   </div>
                 </div>
 
-                <div class="calc-option-card" data-name="Mágneses sínrendszer tápellátásának kiépítése" data-price="28000">
+                <div class="calc-option-card" data-name="Mágneses sínrendszer tápellátásának kiépítése"
+                  data-price="28000">
                   <div class="calc-opt-info">
                     <span class="calc-opt-name">Mágneses sínrendszer tápellátásának kiépítése</span>
                     <span class="calc-opt-price">28 000 Ft</span>
@@ -966,7 +1050,8 @@
             <div>
               <div class="calc-summary-header">
                 <h4>Kalkulált Tételek</h4>
-                <p style="font-size:0.82rem;color:var(--text-muted);margin-top:4px;">Az Ön által összeállított munkalap:</p>
+                <p style="font-size:0.82rem;color:var(--text-muted);margin-top:4px;">Az Ön által összeállított munkalap:
+                </p>
               </div>
 
               <ul class="calc-summary-items" id="calcSummaryList">
@@ -1103,11 +1188,13 @@
         <div class="project-card">
           <div class="before-after-grid">
             <div class="before-after-img-wrap">
-              <img src="images/lighting.avif" alt="Előtte - Nappali mennyezeti indirekt rejtett LED világítás" loading="lazy">
+              <img src="images/lighting.avif" alt="Előtte - Nappali mennyezeti indirekt rejtett LED világítás"
+                loading="lazy">
               <span class="before-after-tag">Előtte</span>
             </div>
             <div class="before-after-img-wrap">
-              <img src="images/hero-img-1.avif" alt="Utána - Nappali mennyezeti indirekt rejtett LED világítás" loading="lazy">
+              <img src="images/hero-img-1.avif" alt="Utána - Nappali mennyezeti indirekt rejtett LED világítás"
+                loading="lazy">
               <span class="before-after-tag after">Utána</span>
             </div>
           </div>
@@ -1117,7 +1204,8 @@
               <span>2026. április</span>
             </div>
             <h3 class="project-title">Nappali mennyezeti indirekt rejtett LED világítás</h3>
-            <p class="project-desc">22 méter 3000K melegfehér COB LED szalag süllyesztett aluprofilban, fali dimmerrel vezérelve.</p>
+            <p class="project-desc">22 méter 3000K melegfehér COB LED szalag süllyesztett aluprofilban, fali dimmerrel
+              vezérelve.</p>
           </div>
         </div>
 
@@ -1125,7 +1213,8 @@
         <div class="project-card">
           <div class="project-thumb">
             <picture>
-              <img src="images/lighting.avif" alt="Konyhai munkapult alatti érintésmentes LED profil" loading="lazy" decoding="async">
+              <img src="images/lighting.avif" alt="Konyhai munkapult alatti érintésmentes LED profil" loading="lazy"
+                decoding="async">
             </picture>
             <span class="project-status-pill">Átadva</span>
           </div>
@@ -1143,7 +1232,8 @@
         <div class="project-card">
           <div class="before-after-grid">
             <div class="before-after-img-wrap">
-              <img src="images/panel-work.avif" alt="Előtte - Lépcsőfok világítás és mágneses sínrendszer" loading="lazy">
+              <img src="images/panel-work.avif" alt="Előtte - Lépcsőfok világítás és mágneses sínrendszer"
+                loading="lazy">
               <span class="before-after-tag">Előtte</span>
             </div>
             <div class="before-after-img-wrap">
@@ -1157,7 +1247,8 @@
               <span>2026. március</span>
             </div>
             <h3 class="project-title">Lépcsőfok világítás és mágneses sínrendszer</h3>
-            <p class="project-desc">Lépcsőfokok alatti rejtett világítás alkonykapcsolóval és design mennyezeti mágneses spotsínekkel.</p>
+            <p class="project-desc">Lépcsőfokok alatti rejtett világítás alkonykapcsolóval és design mennyezeti mágneses
+              spotsínekkel.</p>
           </div>
         </div>
       </div>
@@ -1417,12 +1508,13 @@
         <div class="quote-form-card">
           <div class="form-header">
             <h3>Kérjen Gyors Visszahívást</h3>
-            <p>Adja meg elérhetőségeit és kollégánk 15 percen belül felveszi Önnel a kapcsolatot!</p>
+            <p>Adja meg elérhetőségeit és kollégánk 60 percen belül felveszi Önnel a kapcsolatot!</p>
           </div>
 
           <form id="quoteForm" action="https://formsubmit.co/villux024@gmail.com" method="POST">
             <!-- FormSubmit email forwarding configuration -->
-            <input type="hidden" name="_subject" id="formSubject" value="⚡ ÚJ AJÁNLATKÉRÉS (led-vilagitas-tervezes-kivitelezes.html)">
+            <input type="hidden" name="_subject" id="formSubject"
+              value="⚡ ÚJ AJÁNLATKÉRÉS (led-vilagitas-tervezes-kivitelezes.html)">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="text" name="_honey" style="display:none">
@@ -1519,7 +1611,8 @@
             <div class="accordion-icon-wrap">+</div>
           </button>
           <div class="accordion-body">
-            <p>A nagy teljesítményű LED szalagok melegszenek. Alumínium profil nélkül a chipek gyorsan veszítenek fényerejükből és tönkremennek. A profil biztosítja a tartós, pontmentes homogén fényt.</p>
+            <p>A nagy teljesítményű LED szalagok melegszenek. Alumínium profil nélkül a chipek gyorsan veszítenek
+              fényerejükből és tönkremennek. A profil biztosítja a tartós, pontmentes homogén fényt.</p>
           </div>
         </div>
 
@@ -1530,7 +1623,8 @@
             <div class="accordion-icon-wrap">+</div>
           </button>
           <div class="accordion-body">
-            <p>Igen! Fali forgatógombos dimmerrel, távirányítóval vagy okostelefonos alkalmazással (Zigbee / WiFi) fokozatmentesen szabályozható a fényerő és a színhőmérséklet.</p>
+            <p>Igen! Fali forgatógombos dimmerrel, távirányítóval vagy okostelefonos alkalmazással (Zigbee / WiFi)
+              fokozatmentesen szabályozható a fényerő és a színhőmérséklet.</p>
           </div>
         </div>
 
@@ -1541,7 +1635,8 @@
             <div class="accordion-icon-wrap">+</div>
           </button>
           <div class="accordion-body">
-            <p>A tápegységet jól szellőző, de rejtett és karbantartás céljából hozzáférhető helyre (pl. gipszkarton revíziós ajtó mögé, konyhaszekrény tetejére) telepítjük.</p>
+            <p>A tápegységet jól szellőző, de rejtett és karbantartás céljából hozzáférhető helyre (pl. gipszkarton
+              revíziós ajtó mögé, konyhaszekrény tetejére) telepítjük.</p>
           </div>
         </div>
 
@@ -1552,7 +1647,8 @@
             <div class="accordion-icon-wrap">+</div>
           </button>
           <div class="accordion-body">
-            <p>Kizárólag magas színvisszaadású (CRI > 90), prémium COB vagy SMD LED szalagokat és megbízható ipari MeanWell tápegységeket építünk be.</p>
+            <p>Kizárólag magas színvisszaadású (CRI > 90), prémium COB vagy SMD LED szalagokat és megbízható ipari
+              MeanWell tápegységeket építünk be.</p>
           </div>
         </div>
 
@@ -1563,7 +1659,8 @@
             <div class="accordion-icon-wrap">+</div>
           </button>
           <div class="accordion-body">
-            <p>Igen, nehéz kristálycsillárok, mennyezeti LED panelek, sínrendszeres spotok és fali karok szakszerű felszerelését is végezzük.</p>
+            <p>Igen, nehéz kristálycsillárok, mennyezeti LED panelek, sínrendszeres spotok és fali karok szakszerű
+              felszerelését is végezzük.</p>
           </div>
         </div>
       </div>
@@ -1579,13 +1676,14 @@
         <!-- Col 1: Brand & About -->
         <div class="footer-col">
           <a href="#" class="logo" style="margin-bottom:18px;">
-            <div class="logo-badge">
-              <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
-            </div>
+            <svg class="logo-icon" viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#073123"
+                d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+              <path fill="#073123" fill-opacity=".85"
+                d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+              <path fill="#073123"
+                d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+            </svg>
             <div class="logo-text">
               VILLUX
             </div>
@@ -1617,22 +1715,22 @@
         </div>
 
         <!-- Col 3: Szolgáltatásaink -->
-                  <div class="footer-col">
-            <h4>Fő Szolgáltatások</h4>
-            <ul class="footer-links">
-              <li><a href="sos-villanyszerelo-budapest.html">0-24 SOS Hibaelhárítás</a></li>
-              <li><a href="villanyszerelo-budapest.html">Villanyszerelő Budapest</a></li>
-              <li><a href="biztositektabla-szereles.html">Biztosítéktábla csere</a></li>
-              <li><a href="fozolap-bekotes.html">Főzőlap & sütő bekötés</a></li>
-              <li><a href="villamos-halozat-felujitas.html">Elektromos hálózat felújítás</a></li>
-              <li><a href="villamos-szabvanyositas-vbf.html">VBF & Szabványosítás</a></li>
-              <li><a href="lakasvillanyszereles-epuletvillamossag.html">Lakásvillanyszerelés</a></li>
-              <li><a href="led-vilagitas-tervezes-kivitelezes.html">LED világítástechnika</a></li>
-              <li><a href="elektromos-auto-tolto-kiepites.html">Elektromos autó töltő</a></li>
-            </ul>
-          </div>
+        <div class="footer-col">
+          <h4>Fő Szolgáltatások</h4>
+          <ul class="footer-links">
+            <li><a href="sos-villanyszerelo-budapest.html">0-24 SOS Hibaelhárítás</a></li>
+            <li><a href="villanyszerelo-budapest.html">Villanyszerelő Budapest</a></li>
+            <li><a href="biztositektabla-szereles.html">Biztosítéktábla csere</a></li>
+            <li><a href="fozolap-bekotes.html">Főzőlap & sütő bekötés</a></li>
+            <li><a href="villamos-halozat-felujitas.html">Elektromos hálózat felújítás</a></li>
+            <li><a href="villamos-szabvanyositas-vbf.html">VBF & Szabványosítás</a></li>
+            <li><a href="lakasvillanyszereles-epuletvillamossag.html">Lakásvillanyszerelés</a></li>
+            <li><a href="led-vilagitas-tervezes-kivitelezes.html">LED világítástechnika</a></li>
+            <li><a href="elektromos-auto-tolto-kiepites.html">Elektromos autó töltő</a></li>
+          </ul>
+        </div>
 
-          <!-- Col 4: Kapcsolat info -->
+        <!-- Col 4: Kapcsolat info -->
         <div class="footer-col">
           <h4>Elérhetőségek</h4>
           <ul class="footer-contact-list">

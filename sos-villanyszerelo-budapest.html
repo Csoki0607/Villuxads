@@ -149,13 +149,14 @@
   <header class="main-header" id="mainHeader">
     <div class="container navbar">
       <a href="index.html" class="logo" aria-label="Villux Kezdőlap">
-        <div class="logo-badge">
-          <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
-        </div>
+        <svg class="logo-icon" viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#073123"
+            d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+          <path fill="#073123" fill-opacity=".85"
+            d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+          <path fill="#073123"
+            d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+        </svg>
         <div class="logo-text">
           VILLUX
         </div>
@@ -165,25 +166,35 @@
         <ul class="nav-menu" id="navMenu">
           <li><a href="index.html" class="nav-link">Főoldal</a></li>
           <li><a href="#miert-a-villux" class="nav-link">Miért a Villux?</a></li>
-                      <li class="nav-item-dropdown">
-              <a href="#szolgaltatasok" class="nav-link dropdown-toggle" id="servicesDropdownToggle" aria-haspopup="true" aria-expanded="false">
-                Szolgáltatások
-                <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </a>
-              <ul class="dropdown-menu" aria-label="Szolgáltatások almenü">
-                <li><a href="sos-villanyszerelo-budapest.html" class="dropdown-link active"><span class="dropdown-icon">🚨</span> SOS Villanyszerelő (0–24)</a></li>
-                <li><a href="villanyszerelo-budapest.html" class="dropdown-link"><span class="dropdown-icon">⚡</span> Villanyszerelő Budapest</a></li>
-                <li><a href="biztositektabla-szereles.html" class="dropdown-link"><span class="dropdown-icon">🎛️</span> Biztosítéktábla Szerelés</a></li>
-                <li><a href="fozolap-bekotes.html" class="dropdown-link"><span class="dropdown-icon">🍳</span> Főzőlap & Sütő Bekötés</a></li>
-                <li><a href="villamos-halozat-felujitas.html" class="dropdown-link"><span class="dropdown-icon">🔌</span> Villamos Hálózat Felújítás</a></li>
-                <li><a href="villamos-szabvanyositas-vbf.html" class="dropdown-link"><span class="dropdown-icon">📋</span> Villamos Szabványosítás & VBF</a></li>
-                <li><a href="lakasvillanyszereles-epuletvillamossag.html" class="dropdown-link"><span class="dropdown-icon">🏠</span> Lakásvillanyszerelés</a></li>
-                <li><a href="led-vilagitas-tervezes-kivitelezes.html" class="dropdown-link"><span class="dropdown-icon">💡</span> LED Világítástechnika</a></li>
-                <li><a href="elektromos-auto-tolto-kiepites.html" class="dropdown-link"><span class="dropdown-icon">🚗</span> Elektromos Autó Töltő</a></li>
-              </ul>
-            </li>
+          <li class="nav-item-dropdown">
+            <a href="#szolgaltatasok" class="nav-link dropdown-toggle" id="servicesDropdownToggle" aria-haspopup="true"
+              aria-expanded="false">
+              Szolgáltatások
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu" aria-label="Szolgáltatások almenü">
+              <li><a href="sos-villanyszerelo-budapest.html" class="dropdown-link active"><span
+                    class="dropdown-icon">🚨</span> SOS Villanyszerelő (0–24)</a></li>
+              <li><a href="villanyszerelo-budapest.html" class="dropdown-link"><span class="dropdown-icon">⚡</span>
+                  Villanyszerelő Budapest</a></li>
+              <li><a href="biztositektabla-szereles.html" class="dropdown-link"><span class="dropdown-icon">🎛️</span>
+                  Biztosítéktábla Szerelés</a></li>
+              <li><a href="fozolap-bekotes.html" class="dropdown-link"><span class="dropdown-icon">🍳</span> Főzőlap &
+                  Sütő Bekötés</a></li>
+              <li><a href="villamos-halozat-felujitas.html" class="dropdown-link"><span class="dropdown-icon">🔌</span>
+                  Villamos Hálózat Felújítás</a></li>
+              <li><a href="villamos-szabvanyositas-vbf.html" class="dropdown-link"><span class="dropdown-icon">📋</span>
+                  Villamos Szabványosítás & VBF</a></li>
+              <li><a href="lakasvillanyszereles-epuletvillamossag.html" class="dropdown-link"><span
+                    class="dropdown-icon">🏠</span> Lakásvillanyszerelés</a></li>
+              <li><a href="led-vilagitas-tervezes-kivitelezes.html" class="dropdown-link"><span
+                    class="dropdown-icon">💡</span> LED Világítástechnika</a></li>
+              <li><a href="elektromos-auto-tolto-kiepites.html" class="dropdown-link"><span
+                    class="dropdown-icon">🚗</span> Elektromos Autó Töltő</a></li>
+            </ul>
+          </li>
           <li><a href="#arak" class="nav-link">Áraink</a></li>
           <li><a href="#kalkulator" class="nav-link">Árkalkulátor</a></li>
           <li><a href="#referenciak" class="nav-link">Referenciák</a></li>
@@ -231,8 +242,8 @@
 
         <p class="hero-description">
           <span class="hero-desc-lead">Sürgősségi és ügyeletes villanyszerelő Budapesten és Pest megyében.</span>
-          Zárlat, áramkimaradás, füstölő konnektor vagy leverődő biztosíték esetén ügyeletes villanyszerelő csapatunk 
-          akár <strong>30–60 percen belül</strong> a helyszínre érkezik. Éjjel-nappal, hétvégén és ünnepnapokon is 
+          Zárlat, áramkimaradás, füstölő konnektor vagy leverődő biztosíték esetén ügyeletes villanyszerelő csapatunk
+          akár <strong>30–60 percen belül</strong> a helyszínre érkezik. Éjjel-nappal, hétvégén és ünnepnapokon is
           azonnal hívható gyorsszolgálat, fix árakkal és 100% garanciával.
         </p>
 
@@ -304,10 +315,13 @@
         <div class="hero-yellow-trust-badge">
           <div class="badge-lightning-icon">
             <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+              <path fill="currentColor"
+                d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+              <path fill="currentColor" fill-opacity=".7"
+                d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+              <path fill="currentColor"
+                d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+            </svg>
           </div>
           <div class="badge-text-wrap">
             <div class="badge-title">⚡ 0–24 SOS GYORSSZOLGÁLAT</div>
@@ -334,14 +348,18 @@
       <div class="concept-card concept-card-yellow mobile-card">
         <div class="card-yellow-badge-tag">⚡ 0–24 ÜGYELETES VILLANYSZERELŐ</div>
         <div class="card-yellow-title">0–24 SOS Villanyszerelő & Ügyelet Budapest</div>
-        <p class="card-yellow-desc">Azonnali és sürgősségi hibaelhárítás, zárlatkeresés akár 30-60 percen belül hétvégén és ünnepnapokon is.</p>
+        <p class="card-yellow-desc">Azonnali és sürgősségi hibaelhárítás, zárlatkeresés akár 30-60 percen belül hétvégén
+          és ünnepnapokon is.</p>
         <div class="card-yellow-footer">
           <div class="circle-lightning-icon">
             <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+              <path fill="currentColor"
+                d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+              <path fill="currentColor" fill-opacity=".7"
+                d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+              <path fill="currentColor"
+                d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+            </svg>
           </div>
           <div class="card-yellow-stat">
             <span class="card-stat-number">0–24</span>
@@ -537,7 +555,8 @@
           Milyen Sürgős Hibákban <span class="text-gold">Tudunk Azonnal Segíteni?</span>
         </h2>
         <p class="section-desc">
-          Szervizautóink Budapest összes kerületében és Pest megyében azonnal indulásra készek. Fix munkadíjak, hivatalos garancia és azonnali helyszíni megoldások.
+          Szervizautóink Budapest összes kerületében és Pest megyében azonnal indulásra készek. Fix munkadíjak,
+          hivatalos garancia és azonnali helyszíni megoldások.
         </p>
       </div>
 
@@ -545,23 +564,35 @@
 
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/panel-work.avif" alt="SOS & Ügyeletes Villanyszerelő 0–24" loading="lazy" decoding="async" width="600" height="400">
-            <div class="service-badge-urgent"><span class="pulse-dot" style="background:#fff;"></span> 0-24 SOS ÜGYELET</div>
+            <img src="images/panel-work.avif" alt="SOS & Ügyeletes Villanyszerelő 0–24" loading="lazy" decoding="async"
+              width="600" height="400">
+            <div class="service-badge-urgent"><span class="pulse-dot" style="background:#fff;"></span> 0-24 SOS ÜGYELET
+            </div>
             <div class="service-icon-floating">
               <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                <path fill="currentColor"
+                  d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                <path fill="currentColor" fill-opacity=".7"
+                  d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                <path fill="currentColor"
+                  d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+              </svg>
             </div>
           </div>
           <div class="service-content">
             <h3 class="service-title">SOS & Ügyeletes Villanyszerelő 0–24</h3>
-            <p class="service-desc">Teljes áramkimaradás, leverődő kismegszakító, szikrázó konnektorok vagy égésszag? Azonnal indulunk a helyszínre és megszüntetjük a veszélyt.</p>
+            <p class="service-desc">Teljes áramkimaradás, leverődő kismegszakító, szikrázó konnektorok vagy égésszag?
+              Azonnal indulunk a helyszínre és megszüntetjük a veszélyt.</p>
             <ul class="service-features-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Kiszállás akár 30–60 percen belül</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Éjjel-nappal, hétvégén és ünnepnap</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Élet- és tűzveszély azonnali elhárítása</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Kiszállás akár 30–60 percen belül</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Éjjel-nappal, hétvégén és ünnepnap</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Élet- és tűzveszély azonnali elhárítása</li>
             </ul>
             <div class="service-card-footer">
               <div class="service-price-from">
@@ -574,23 +605,34 @@
 
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/hibajavitas.avif" alt="Zárlatkeresés & Sürgősségi Hibaelhárítás" loading="lazy" decoding="async" width="600" height="400">
-            
+            <img src="images/hibajavitas.avif" alt="Zárlatkeresés & Sürgősségi Hibaelhárítás" loading="lazy"
+              decoding="async" width="600" height="400">
+
             <div class="service-icon-floating">
               <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                <path fill="currentColor"
+                  d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                <path fill="currentColor" fill-opacity=".7"
+                  d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                <path fill="currentColor"
+                  d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+              </svg>
             </div>
           </div>
           <div class="service-content">
             <h3 class="service-title">Zárlatkeresés & Sürgősségi Hibaelhárítás</h3>
-            <p class="service-desc">Célzott műszeres bemérés felesleges falbontás nélkül. Megkeressük és biztonságosan javítjuk a rejtett vezetékszakadást, földzárlatot vagy meglazult kötést.</p>
+            <p class="service-desc">Célzott műszeres bemérés felesleges falbontás nélkül. Megkeressük és biztonságosan
+              javítjuk a rejtett vezetékszakadást, földzárlatot vagy meglazult kötést.</p>
             <ul class="service-features-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Rombolásmentes műszeres bemérés</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Kismegszakító & biztosíték csere</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Beégett kötések szakszerű újrahúzása</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Rombolásmentes műszeres bemérés</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Kismegszakító & biztosíték csere</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Beégett kötések szakszerű újrahúzása</li>
             </ul>
             <div class="service-card-footer">
               <div class="service-price-from">
@@ -603,23 +645,34 @@
 
         <div class="service-card">
           <div class="service-thumb">
-            <img src="images/eloszto.avif" alt="Biztosítéktábla & FI-relé Vészjavítás" loading="lazy" decoding="async" width="600" height="400">
-            
+            <img src="images/eloszto.avif" alt="Biztosítéktábla & FI-relé Vészjavítás" loading="lazy" decoding="async"
+              width="600" height="400">
+
             <div class="service-icon-floating">
               <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                <path fill="currentColor"
+                  d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                <path fill="currentColor" fill-opacity=".7"
+                  d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                <path fill="currentColor"
+                  d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+              </svg>
             </div>
           </div>
           <div class="service-content">
             <h3 class="service-title">Biztosítéktábla & FI-relé Vészjavítás</h3>
-            <p class="service-desc">Túlterhelt olvadóbiztosítékok, leoldó kismegszakítók és életvédelmi kapcsolók (FI-relé) azonnali helyszíni javítása vagy cseréje mozgó raktárkészletből.</p>
+            <p class="service-desc">Túlterhelt olvadóbiztosítékok, leoldó kismegszakítók és életvédelmi kapcsolók
+              (FI-relé) azonnali helyszíni javítása vagy cseréje mozgó raktárkészletből.</p>
             <ul class="service-features-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Schneider és Hager minőségi alkatrészek</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Életvédelmi FI-relé azonnali beépítés</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Áramellátás biztonságos visszaállítása</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Schneider és Hager minőségi alkatrészek</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Életvédelmi FI-relé azonnali beépítés</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Áramellátás biztonságos visszaállítása</li>
             </ul>
             <div class="service-card-footer">
               <div class="service-price-from">
@@ -659,14 +712,17 @@
             <span class="pricing-badge-count">5 tétel</span>
           </div>
           <ul class="price-items-list">
-            
+
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Műszeres hibakeresés & zárlatbemérés
               </span>
               <span class="price-item-val">10 000 Ft</span>
@@ -674,10 +730,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Kismegszakító vészhelyzeti csere
               </span>
               <span class="price-item-val">7 500 Ft / db</span>
@@ -685,10 +744,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 FI-relé sürgősségi javítás / beépítés
               </span>
               <span class="price-item-val">24 000 Ft</span>
@@ -696,10 +758,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Beégett kötés szakszerű újrakötése
               </span>
               <span class="price-item-val">8 500 Ft / pont</span>
@@ -707,10 +772,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Szikrázó konnektor / aljzat cseréje
               </span>
               <span class="price-item-val">6 500 Ft / db</span>
@@ -732,14 +800,17 @@
             <span class="pricing-badge-count">5 tétel</span>
           </div>
           <ul class="price-items-list">
-            
+
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Kiszállási díj (elvégzett javítás esetén)
               </span>
               <span class="price-item-val">0 Ft (DÍJMENTES)</span>
@@ -747,10 +818,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Kiszállás és műszeres diagnosztika
               </span>
               <span class="price-item-val">10 000 Ft</span>
@@ -758,10 +832,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Hétvégi ügyeleti munkavégzés
               </span>
               <span class="price-item-val">+30% munkadíj</span>
@@ -769,10 +846,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Éjszakai sürgősségi ügyelet (22–06h)
               </span>
               <span class="price-item-val">+50% munkadíj</span>
@@ -780,10 +860,13 @@
             <li class="price-item-row">
               <span class="price-item-title">
                 <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
+                  <path fill="currentColor"
+                    d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+                  <path fill="currentColor" fill-opacity=".7"
+                    d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+                  <path fill="currentColor"
+                    d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+                </svg>
                 Hivatalos kárszakértői jegyzőkönyv
               </span>
               <span class="price-item-val">15 000 Ft</span>
@@ -954,7 +1037,8 @@
             <div>
               <div class="calc-summary-header">
                 <h4>Kalkulált Tételek</h4>
-                <p style="font-size:0.82rem;color:var(--text-muted);margin-top:4px;">Az Ön által összeállított munkalap:</p>
+                <p style="font-size:0.82rem;color:var(--text-muted);margin-top:4px;">Az Ön által összeállított munkalap:
+                </p>
               </div>
 
               <ul class="calc-summary-items" id="calcSummaryList">
@@ -1091,11 +1175,13 @@
         <div class="project-card">
           <div class="before-after-grid">
             <div class="before-after-img-wrap">
-              <img src="images/eloszto.avif" alt="Előtte - Éjszakai zárlatos biztosítéktábla azonnali cseréje" loading="lazy">
+              <img src="images/eloszto.avif" alt="Előtte - Éjszakai zárlatos biztosítéktábla azonnali cseréje"
+                loading="lazy">
               <span class="before-after-tag">Előtte</span>
             </div>
             <div class="before-after-img-wrap">
-              <img src="images/panel-work.avif" alt="Utána - Éjszakai zárlatos biztosítéktábla azonnali cseréje" loading="lazy">
+              <img src="images/panel-work.avif" alt="Utána - Éjszakai zárlatos biztosítéktábla azonnali cseréje"
+                loading="lazy">
               <span class="before-after-tag after">Utána</span>
             </div>
           </div>
@@ -1105,7 +1191,8 @@
               <span>2026. március</span>
             </div>
             <h3 class="project-title">Éjszakai zárlatos biztosítéktábla azonnali cseréje</h3>
-            <p class="project-desc">Leolvadt régi bakelit biztosítékok helyett modern Hager süllyesztett kismegszakító tábla és életvédelmi FI-relé beépítése 45 perc alatt.</p>
+            <p class="project-desc">Leolvadt régi bakelit biztosítékok helyett modern Hager süllyesztett kismegszakító
+              tábla és életvédelmi FI-relé beépítése 45 perc alatt.</p>
           </div>
         </div>
 
@@ -1113,7 +1200,8 @@
         <div class="project-card">
           <div class="project-thumb">
             <picture>
-              <img src="images/hibajavitas.avif" alt="SOS zárlatbemérés felesleges falbontás nélkül" loading="lazy" decoding="async">
+              <img src="images/hibajavitas.avif" alt="SOS zárlatbemérés felesleges falbontás nélkül" loading="lazy"
+                decoding="async">
             </picture>
             <span class="project-status-pill">Átadva</span>
           </div>
@@ -1123,7 +1211,8 @@
               <span>2026. április</span>
             </div>
             <h3 class="project-title">SOS zárlatbemérés felesleges falbontás nélkül</h3>
-            <p class="project-desc">Rejtett konyhai vezetékszakadás és földzárlat felderítése digitális fali műszerrel, a hálózat azonnali helyreállítása.</p>
+            <p class="project-desc">Rejtett konyhai vezetékszakadás és földzárlat felderítése digitális fali műszerrel,
+              a hálózat azonnali helyreállítása.</p>
           </div>
         </div>
 
@@ -1131,11 +1220,13 @@
         <div class="project-card">
           <div class="before-after-grid">
             <div class="before-after-img-wrap">
-              <img src="images/panel-work.avif" alt="Előtte - Szikrázó fali kötődoboz és aljzat helyreállítása" loading="lazy">
+              <img src="images/panel-work.avif" alt="Előtte - Szikrázó fali kötődoboz és aljzat helyreállítása"
+                loading="lazy">
               <span class="before-after-tag">Előtte</span>
             </div>
             <div class="before-after-img-wrap">
-              <img src="images/hero-img-1.avif" alt="Utána - Szikrázó fali kötődoboz és aljzat helyreállítása" loading="lazy">
+              <img src="images/hero-img-1.avif" alt="Utána - Szikrázó fali kötődoboz és aljzat helyreállítása"
+                loading="lazy">
               <span class="before-after-tag after">Utána</span>
             </div>
           </div>
@@ -1145,7 +1236,8 @@
               <span>2026. április</span>
             </div>
             <h3 class="project-title">Szikrázó fali kötődoboz és aljzat helyreállítása</h3>
-            <p class="project-desc">Kilazult alumínium kötések égésnyomainak megszüntetése, új WAGO kötések és terhelhető szerelvények beépítése.</p>
+            <p class="project-desc">Kilazult alumínium kötések égésnyomainak megszüntetése, új WAGO kötések és
+              terhelhető szerelvények beépítése.</p>
           </div>
         </div>
       </div>
@@ -1405,12 +1497,13 @@
         <div class="quote-form-card">
           <div class="form-header">
             <h3>Kérjen Gyors Visszahívást</h3>
-            <p>Adja meg elérhetőségeit és kollégánk 15 percen belül felveszi Önnel a kapcsolatot!</p>
+            <p>Adja meg elérhetőségeit és kollégánk 60 percen belül felveszi Önnel a kapcsolatot!</p>
           </div>
 
           <form id="quoteForm" action="https://formsubmit.co/villux024@gmail.com" method="POST">
             <!-- FormSubmit email forwarding configuration -->
-            <input type="hidden" name="_subject" id="formSubject" value="⚡ ÚJ AJÁNLATKÉRÉS (sos-villanyszerelo-budapest.html)">
+            <input type="hidden" name="_subject" id="formSubject"
+              value="⚡ ÚJ AJÁNLATKÉRÉS (sos-villanyszerelo-budapest.html)">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="text" name="_honey" style="display:none">
@@ -1445,7 +1538,8 @@
             <div class="form-group">
               <label class="form-label" for="formService">Szolgáltatás típusa</label>
               <select id="formService" name="service" class="form-control">
-                <option value="SOS Hibajavítás (Azonnali kiszállás)" selected>SOS Hibajavítás (Azonnali kiszállás)</option>
+                <option value="SOS Hibajavítás (Azonnali kiszállás)" selected>SOS Hibajavítás (Azonnali kiszállás)
+                </option>
                 <option value="Biztosítótábla / FI-relé csere">Biztosítótábla / FI-relé csere</option>
                 <option value="Hálózatfelújítás / Épületvillamosság">Hálózatfelújítás / Épületvillamosság</option>
                 <option value="Kamerarendszer kiépítés">Kamerarendszer kiépítés</option>
@@ -1507,7 +1601,8 @@
             <div class="accordion-icon-wrap">+</div>
           </button>
           <div class="accordion-body">
-            <p>Budapest bármely kerületébe és a környező Pest megyei településekre forgalomtól függően átlagosan 30–60 percen belül megérkezik felszerelt szervizautónk.</p>
+            <p>Budapest bármely kerületébe és a környező Pest megyei településekre forgalomtól függően átlagosan 30–60
+              percen belül megérkezik felszerelt szervizautónk.</p>
           </div>
         </div>
 
@@ -1518,7 +1613,8 @@
             <div class="accordion-icon-wrap">+</div>
           </button>
           <div class="accordion-body">
-            <p>Igen! Ügyeletünk az év 365 napján, éjjel-nappal (0–24), szombaton, vasárnap és ünnepnapokon is folyamatosan fogadja a vészhelyzeti hívásokat.</p>
+            <p>Igen! Ügyeletünk az év 365 napján, éjjel-nappal (0–24), szombaton, vasárnap és ünnepnapokon is
+              folyamatosan fogadja a vészhelyzeti hívásokat.</p>
           </div>
         </div>
 
@@ -1529,7 +1625,9 @@
             <div class="accordion-icon-wrap">+</div>
           </button>
           <div class="accordion-body">
-            <p>Azonnal kapcsolja le a főbiztosítékot a villanyóra szekrénynél! Ne nyúljon a füstölő eszközhöz, és semmiképp ne próbálja vízzel oltani! Ezután hívjon minket a +36 70 306 8409 számon. Közvetlen életveszély esetén hívja a 112-t!</p>
+            <p>Azonnal kapcsolja le a főbiztosítékot a villanyóra szekrénynél! Ne nyúljon a füstölő eszközhöz, és
+              semmiképp ne próbálja vízzel oltani! Ezután hívjon minket a +36 70 306 8409 számon. Közvetlen életveszély
+              esetén hívja a 112-t!</p>
           </div>
         </div>
 
@@ -1540,7 +1638,8 @@
             <div class="accordion-icon-wrap">+</div>
           </button>
           <div class="accordion-body">
-            <p>Amennyiben a helyszínen megrendeli és elvégezzük a javítási munkát, a kiszállási díj 0 Ft (díjmentes). Csak az elvégzett javítás fix munkadíját és a beépített anyagot kell fizetnie.</p>
+            <p>Amennyiben a helyszínen megrendeli és elvégezzük a javítási munkát, a kiszállási díj 0 Ft (díjmentes).
+              Csak az elvégzett javítás fix munkadíját és a beépített anyagot kell fizetnie.</p>
           </div>
         </div>
 
@@ -1551,7 +1650,8 @@
             <div class="accordion-icon-wrap">+</div>
           </button>
           <div class="accordion-body">
-            <p>Természetesen! Minden SOS beavatkozásról hivatalos számlát és garancialevelet állítunk ki, amely biztosítók felé is teljes mértékben benyújtható.</p>
+            <p>Természetesen! Minden SOS beavatkozásról hivatalos számlát és garancialevelet állítunk ki, amely
+              biztosítók felé is teljes mértékben benyújtható.</p>
           </div>
         </div>
       </div>
@@ -1567,13 +1667,14 @@
         <!-- Col 1: Brand & About -->
         <div class="footer-col">
           <a href="#" class="logo" style="margin-bottom:18px;">
-            <div class="logo-badge">
-              <svg viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435"/>
-  <path fill="currentColor" fill-opacity=".7" d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626"/>
-  <path fill="currentColor" d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z"/>
-</svg>
-            </div>
+            <svg class="logo-icon" viewBox="5 5 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#073123"
+                d="M20.116 20.138h-6.45L24.275 6.461l-5.93 3.646H8.158c-1.718 0-2.795 1.865-1.937 3.348l8.808 15.24zm13.51-10.256H25.71l-4.085 8.14h8.497l-15.859 16.25 3.632-2.206 1.361 2.331c.894 1.522 3.12 1.522 4.029 0l12.355-21.08c.893-1.522-.227-3.435-2.014-3.435" />
+              <path fill="#073123" fill-opacity=".85"
+                d="M38.897 12.327c-1.62-3.949-7.965-5.162-15.183-3.3a.7.7 0 0 0-.097.127c6.22-1.453 11.526-.437 12.87 2.849 1.718 4.146-3.547 10.351-11.748 13.863-8.2 3.497-16.236 2.975-17.954-1.17-.637-1.566-.29-3.428.818-5.318-1.58 2.412-2.134 4.838-1.289 6.868 1.968 4.795 10.861 5.557 19.866 1.707 9.005-3.836 14.698-10.845 12.717-15.626" />
+              <path fill="#073123"
+                d="M20.116 20.006h-6.45L24.275 6.462l-5.93 3.611H8.158c-1.718 0-2.795 1.847-1.937 3.316l6.954 11.887a45 45 0 0 0 4.376-1.01z" />
+            </svg>
             <div class="logo-text">
               VILLUX
             </div>
@@ -1605,22 +1706,22 @@
         </div>
 
         <!-- Col 3: Szolgáltatásaink -->
-                  <div class="footer-col">
-            <h4>Fő Szolgáltatások</h4>
-            <ul class="footer-links">
-              <li><a href="sos-villanyszerelo-budapest.html">0-24 SOS Hibaelhárítás</a></li>
-              <li><a href="villanyszerelo-budapest.html">Villanyszerelő Budapest</a></li>
-              <li><a href="biztositektabla-szereles.html">Biztosítéktábla csere</a></li>
-              <li><a href="fozolap-bekotes.html">Főzőlap & sütő bekötés</a></li>
-              <li><a href="villamos-halozat-felujitas.html">Elektromos hálózat felújítás</a></li>
-              <li><a href="villamos-szabvanyositas-vbf.html">VBF & Szabványosítás</a></li>
-              <li><a href="lakasvillanyszereles-epuletvillamossag.html">Lakásvillanyszerelés</a></li>
-              <li><a href="led-vilagitas-tervezes-kivitelezes.html">LED világítástechnika</a></li>
-              <li><a href="elektromos-auto-tolto-kiepites.html">Elektromos autó töltő</a></li>
-            </ul>
-          </div>
+        <div class="footer-col">
+          <h4>Fő Szolgáltatások</h4>
+          <ul class="footer-links">
+            <li><a href="sos-villanyszerelo-budapest.html">0-24 SOS Hibaelhárítás</a></li>
+            <li><a href="villanyszerelo-budapest.html">Villanyszerelő Budapest</a></li>
+            <li><a href="biztositektabla-szereles.html">Biztosítéktábla csere</a></li>
+            <li><a href="fozolap-bekotes.html">Főzőlap & sütő bekötés</a></li>
+            <li><a href="villamos-halozat-felujitas.html">Elektromos hálózat felújítás</a></li>
+            <li><a href="villamos-szabvanyositas-vbf.html">VBF & Szabványosítás</a></li>
+            <li><a href="lakasvillanyszereles-epuletvillamossag.html">Lakásvillanyszerelés</a></li>
+            <li><a href="led-vilagitas-tervezes-kivitelezes.html">LED világítástechnika</a></li>
+            <li><a href="elektromos-auto-tolto-kiepites.html">Elektromos autó töltő</a></li>
+          </ul>
+        </div>
 
-          <!-- Col 4: Kapcsolat info -->
+        <!-- Col 4: Kapcsolat info -->
         <div class="footer-col">
           <h4>Elérhetőségek</h4>
           <ul class="footer-contact-list">

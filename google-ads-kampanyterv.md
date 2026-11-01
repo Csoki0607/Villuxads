@@ -280,7 +280,7 @@ Ez a kampány a tervezhető, nagyobb volumenű és lakossági villanyszerelési 
 ##### 6. Belső link: Ingyenes Ajánlatkérés
 * **Szöveg (Cím):** `Ingyenes Ajánlatkérés` *(21/25 kar)*
 * **1. leíró sor:** `Töltse ki online űrlapunkat` *(27/35 kar)*
-* **2. leíró sor:** `Visszahívjuk 15 percen belül` *(28/35 kar)*
+* **2. leíró sor:** `Visszahívjuk 60 percen belül` *(28/35 kar)*
 * **Végső URL:** `https://www.villux.hu/#kapcsolat`
 
 ---
