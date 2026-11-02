@@ -14,3 +14,5 @@ images/*.zip
 images/*.exe
 *.txt
 !README.md
+!robots.txt
+!llms.txt
