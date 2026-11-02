@@ -227,3 +227,4 @@ A `{keyword}` egy automatikus Google ValueTrack kód, amit a Google a kattintás
    * Másold be a fenti kódok közül a megfelelőt az egyes hirdetéscsoportok URL-beállításaihoz!
 4. **Híváshivatkozás (Call asset) hozzáadása:**  
    * Telefonszám: `+36 70 306 8409` – legyen hozzáadva minden kampányhoz hívásbővítményként!
+
