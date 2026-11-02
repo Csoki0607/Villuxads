@@ -70,7 +70,7 @@
       id: 'hetvege',
       label: 'Hétvégi Ügyelet',
       badge: '📅 HÉTVÉGI & ÜNNEPNAPI ÜGYELET',
-      title: 'Hétvégi Villanyszerelő <span class="text-gold">Ügyelet Budapesten</span>',
+      title: 'Hétvégi Villanyszerelő <span class="text-gold">Ügyelet 0–24</span>',
       lead: 'Szombaton vagy vasárnap lépett fel áramhiba? Hétvégén és ünnepnapokon is teljes készültségben dolgozunk.'
     },
     'fustol': {
